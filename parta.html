@@ -1,0 +1,1649 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f1f2f">
+  <title>Part A · PVOC2 學習</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icons/pvoc2-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="exam-mode ">
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="PVOC2 首頁"><span class="brand-mark">PV</span><span>PVOC2 學習</span></a>
+    <div class="mode-switch" role="group" aria-label="模式切換">
+      <a class="mode-pill " href="index.html">Story Mode</a>
+      <a class="mode-pill active" href="exam.html">Exam Mode</a>
+    </div>
+    <button class="icon-btn" type="button" data-theme-toggle aria-label="切換深淺色">◐</button>
+  </header>
+  <nav class="scroll-nav" aria-label="主要導覽"><a class="nav-link" href="index.html">故事</a><a class="nav-link" href="exam.html">考試流程</a><a class="nav-link" href="parta.html">Part A</a><a class="nav-link" href="partb.html">Part B</a><a class="nav-link" href="questions.html">題庫</a><a class="nav-link" href="mock.html">Mock</a><a class="nav-link" href="wrongbook.html">錯題本</a><a class="nav-link" href="cheatsheet.html">小抄</a><a class="nav-link" href="faq.html">FAQ</a><a class="nav-link" href="sources.html">Sources</a></nav>
+  <main>
+    
+<section class="page-head compact"><p class="eyebrow">Part A</p><h1>Navigation, Seamanship & Safety</h1></section>
+<section class="topic-grid"><a class="topic-card" href="topics/A1.html">
+  <span class="badge">A1</span>
+  <strong>A1 · Handling characteristics and limitations of small craft</strong>
+</a>
+<a class="topic-card" href="topics/A2.html">
+  <span class="badge">A2</span>
+  <strong>A2 · Anchoring</strong>
+</a>
+<a class="topic-card" href="topics/A3.html">
+  <span class="badge">A3</span>
+  <strong>A3 · Start up and close down safety checks</strong>
+</a>
+<a class="topic-card" href="topics/A4.html">
+  <span class="badge">A4</span>
+  <strong>A4 · Chart work, position fixing, ETA</strong>
+</a>
+<a class="topic-card" href="topics/A5.html">
+  <span class="badge">A5</span>
+  <strong>A5 · Tides</strong>
+</a>
+<a class="topic-card" href="topics/A6.html">
+  <span class="badge">A6</span>
+  <strong>A6 · Navigation in restricted visibility</strong>
+</a>
+<a class="topic-card" href="topics/A7.html">
+  <span class="badge">A7</span>
+  <strong>A7 · Local knowledge (HK waters)</strong>
+</a>
+<a class="topic-card" href="topics/A8.html">
+  <span class="badge">A8</span>
+  <strong>A8 · COLREGS（國際海上避碰規則）</strong>
+</a>
+<a class="topic-card" href="topics/A9.html">
+  <span class="badge">A9</span>
+  <strong>A9 · Safety equipment</strong>
+</a>
+<a class="topic-card" href="topics/A10.html">
+  <span class="badge">A10</span>
+  <strong>A10 · Use of VHF</strong>
+</a>
+<a class="topic-card" href="topics/A11.html">
+  <span class="badge">A11</span>
+  <strong>A11 · Marine Department services</strong>
+</a>
+<a class="topic-card" href="topics/A12.html">
+  <span class="badge">A12</span>
+  <strong>A12 · Storm signals and weather</strong>
+</a>
+<a class="topic-card" href="topics/A13.html">
+  <span class="badge">A13</span>
+  <strong>A13 · Handling of emergency situations</strong>
+</a>
+<a class="topic-card" href="topics/A14.html">
+  <span class="badge">A14</span>
+  <strong>A14 · Accident reports</strong>
+</a></section>
+<article class="md-content full-doc"><h1 id="part-a-navigation-seamanship-safety">Part A 學習內容 (Navigation, Seamanship &amp; Safety)</h1>
+<blockquote>
+<p><strong>重要：</strong> 呢份內容由 Claude（Anthropic）依照海事處（Marine Department）官方文件 + PEAK 公告整理，<strong>並經 ChatGPT senior maritime education reviewer 5 輪審核</strong>。每個事實都有 source 引用（例如 [src_examrules]）對應 handoff_v22.json 嘅 source_manifest 條目。</p>
+<p><strong>格式：</strong> 每個 topic 分 4 部分：「點解要學」 → 「核心知識」 → 「考試重點」 → 「易錯陷阱」。完全初學者導向，粵語語氣，但 maritime / engineering technical terms 保留英文（COLREGS、VHF、RAM、starboard 等）。</p>
+<p><strong>共 14 個 topic：A1–A14，對應 examrules_ploc.pdf §8.1 [src_examrules]</strong></p>
+</blockquote>
+<hr>
+<h2 id="a1-handling-characteristics-and-limitations-of-small-craft">A1 · Handling characteristics and limitations of small craft</h2>
+<h3 id="_1">點解要學</h3>
+<p>考船最基本：船同車唔同，冇刹車掣、冇方向盤抓地力，要靠水流同螺旋槳。完全唔識操船嘅人最容易考錯呢部分。</p>
+<h3 id="_2">核心知識</h3>
+<p><strong>1. 機動性反應 (Manoeuvring characteristics)：</strong>
+- 細船反應快，但慣性大；放油門唔等於即時停
+- 舵 (rudder) 要有水流經過才有效；停車時舵冇用
+- <strong>Transverse thrust（橫推力）</strong>：螺旋槳轉動時，除咗推前外，仲會將船尾推向一邊
+  - <strong>右旋單槳（right-handed propeller）正車</strong>：船尾推向右舷
+  - <strong>右旋單槳倒車</strong>：船尾推向左舷 ← 呢個係考試重點
+  - 左旋槳相反
+- 停船距離 (stopping distance)：細船一般要 3–6 個船長度才能完全停定 [src_pvoc_guide]</p>
+<p><strong>2. 大船同帆船嘅操控限制（要避讓佢哋）：</strong>
+- 大船：轉彎半徑大、停船距離長、視覺死角廣
+- 帆船：依賴風向，可能突然轉向 (tacking/gybing)
+- COLREGS Rule 18：機動船一般要避讓帆船、捕魚船、操縱受限船 (RAM)、失控船 (NUC) [src_examrules]</p>
+<p><strong>3. 靠泊同離泊 (Berthing/unberthing)：</strong>
+- <strong>頂流靠泊</strong>：船頭迎著水流方向 → 操控更精準
+  - 點解？水流提供額外舵效，可以慢慢推埋去碼頭
+  - 順流靠泊危險：船速 = 引擎速度 + 水流速度，難停
+- <strong>單槳船靠泊舷別</strong>：右旋單槳船建議<strong>左舷靠泊</strong> (port side moor)，因為倒車時 transverse thrust 自然將 port 側推向碼頭</p>
+<p><strong>4. 擠迫水域 (Confined spaces)：</strong>
+- 慢車航行 + 預早通報意圖
+- VHF 響聲號通知其他船</p>
+<p><strong>5. 惡劣天氣操控：</strong>
+- 用<strong>船頭側 (bow about 20–30°)</strong> 迎浪，唔好正頂浪
+- 慢車前進，避免 broaching（橫擺翻側）、pitch poling（前後翻跟斗）
+- 順浪行駛速度要小心：船尾可能被浪打到失舵</p>
+<p><strong>6. 限制能見度（霧、暴雨）：</strong>
+- 減速到「最少能保持航向嘅速度 (minimum steerage way)」
+- 開全部燈、發霧號（見 A6）
+- 加倍 lookout（見 A8）</p>
+<h3 id="_3">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>出題模式</th>
+<th>答案要點</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>右旋單槳船靠泊邊一邊？</td>
+<td><strong>左舷 (port side)</strong>——倒車時 transverse thrust 推 stern 向 port</td>
+</tr>
+<tr>
+<td>頂流定順流靠泊？</td>
+<td><strong>頂流</strong>——操控更精準</td>
+</tr>
+<tr>
+<td>惡劣天氣航向？</td>
+<td><strong>船頭側頂浪 (bow into seas at angle) + 減速</strong></td>
+</tr>
+<tr>
+<td>12 m 以下嘅船需唔需要顯示 NUC / RAM 號型？</td>
+<td><strong>唔需要</strong>（diving operations 例外）COLREGS Rule 27(g)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_4">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> 倒車時舵效會強——<strong>對：</strong> 倒車時舵效弱，要靠 transverse thrust</li>
+<li><strong>錯：</strong> 順流靠泊節省燃油——<strong>對：</strong> 慳唔到，反而難控制</li>
+<li><strong>錯：</strong> 全速頂浪最穩——<strong>對：</strong> 全速頂浪會 pitch poling，必須減速</li>
+</ul>
+<hr>
+<h2 id="a2-anchoring">A2 · Anchoring</h2>
+<h3 id="_5">點解要學</h3>
+<p>港內擠迫，下錨技巧錯就會走錨碰撞、或者錨纏住電纜要 cut anchor 棄錨。</p>
+<h3 id="_6">核心知識</h3>
+<p><strong>1. 揀錨地 (Selecting anchorage)：</strong>
+- <strong>水深</strong> + 海底質地：泥/沙最好（hold well），岩石/海草難 hold
+- <strong>Swinging room（迴旋空間）</strong>：船會圍住錨點轉，至少要 360° 半徑空間
+- 避開電纜區、養殖區、航道、其他船嘅 swinging circle</p>
+<p><strong>2. Anchor scope（錨索長度）：</strong>
+- <strong>香港 PVOC2 官方指引（考試答案）：「至少 4 倍水深」(at least 4× water depth or more)</strong> [src_pvoc_guide §2.4]
+- 國際 best practice 用 5:1–7:1（US/UK），更安全但 <strong>考試答 4×</strong> 先啱
+- 例：水深 5 m，錨索至少 4 × 5 = 20 m（exam）；實務可放 25–35 m</p>
+<p><strong>3. 下錨步驟：</strong>
+1. 預先 check 錨地、決定下錨點
+2. 慢慢頂流接近，停船
+3. 船開始<strong>輕微後退</strong>時放錨——避免錨直接落喺自己錨索上
+4. 出夠 scope，鎖緊 windlass
+5. <strong>Set anchor</strong>：輕輕倒車測試，確認錨咬實
+6. 錨泊後檢查 leading marks 確定無走錨</p>
+<p><strong>4. 錨泊期間注意：</strong>
+- 顯示 anchor signals：日間 forward 一個黑球；夜間 white all-round light（細船 12 m 以下夜間錨泊喺指定 anchorage 內可豁免）
+- 定期 check leading marks / GPS 確認無走錨
+- 留意風向同流向變化</p>
+<p><strong>5. 走錨 (Dragging anchor) 處理：</strong>
+- 立即啟動引擎避免漂向其他船或淺水
+- 重新下錨（多放 scope，或者揀新位）
+- 通知 VTC 如喺繁忙水域</p>
+<p><strong>6. 纏錨 (Fouled anchor) 處理：</strong>
+- 試慢慢繞錨點打圈解開
+- 唔得就要 cut anchor + 標記位置 + 報告海事處</p>
+<p><strong>7. 緊急下錨：</strong>
+- 失舵、失動力、火警等情況下用作止住船隻
+- 例：失舵喺淺水區 → 立即下錨防擱淺（呢個係 A.37 考點）</p>
+<h3 id="_7">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>題目</th>
+<th>答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anchor scope 官方答案？</td>
+<td><strong>至少 4× 水深</strong>（PVOC guide）</td>
+</tr>
+<tr>
+<td>失舵喺淺水區首要動作？</td>
+<td><strong>立即下錨</strong>——防擱淺</td>
+</tr>
+<tr>
+<td>揀錨地考慮邊三項？</td>
+<td><strong>水深、海底、swinging room</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_8">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> 5–7× scope 係香港官方答案——<strong>對：</strong> 香港 PVOC guide 寫 4× 或以上；5–7× 係國際 rule of thumb</li>
+<li><strong>錯：</strong> 走錨先慢慢諗——<strong>對：</strong> 立即啟動引擎控制船隻</li>
+</ul>
+<hr>
+<h2 id="a3-start-up-and-close-down-safety-checks">A3 · Start up and close down safety checks</h2>
+<h3 id="_9">點解要學</h3>
+<p>考試會問航前 / 泊船後 check list；錯一兩項可能令你考唔過。</p>
+<h3 id="_10">核心知識</h3>
+<p><strong>1. 航前檢查 (Pre-departure check)：</strong> [src_examrules §8.1.A.3.a]</p>
+<p>按官方 syllabus 4 大類：</p>
+<p>(i) <strong>天氣 (Weather)</strong>
+- 查香港天文台預報 (HKO)
+- 留意 typhoon / strong monsoon / thunderstorm signals
+- 揾本地實時 wind / wave 數據</p>
+<p>(ii) <strong>船身乾艙 (Compartment integrity)</strong>
+- Check bilge（艙底）有冇積水
+- 開動 bilge pump 試
+- Check 排水孔（scuppers）暢通</p>
+<p>(iii) <strong>救生 / 消防 / 遇險信號 (LSA / FFA / distress signals)</strong>
+- Lifejackets 數量足夠所有船上人員
+- Lifebuoys（連 light + smoke）就位、易取
+- Fire extinguishers 壓力錶綠色、未過期
+- Distress signals（red flares、orange smoke）未過期</p>
+<p>(iv) <strong>航行設備 (Navigation equipment)</strong>
+- Compass（羅經）
+- Steering 全方向試
+- 錨 + 錨索完整
+- 纜繩 (mooring lines) 完整
+- VHF radio 開機、check Channel 16
+- 燈號（航行燈、停泊燈）全部 ok
+- 聲號設備（汽笛、bell）</p>
+<p><strong>2. 泊船後檢查 (Post-arrival check)：</strong> [src_examrules §8.1.A.3.b]</p>
+<ul>
+<li>(i) Moored properly：纜繩夠多、夠長、有 fender</li>
+<li>(ii) Compartments dry：bilge 抽乾</li>
+<li>(iii) 設備收好：救生衣、纜繩、錨索 stow 妥</li>
+<li>(iv) <strong>LPG cylinder 主閥關緊</strong> — 防漏氣 + 火警</li>
+<li>(v) 電池充滿——未來開機冇問題</li>
+</ul>
+<h3 id="_11">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>題目</th>
+<th>答案要點</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>救生衣放邊？</td>
+<td><strong>可即時使用 + 易取位置</strong>（A.36 考點）唔可以鎖喺櫃</td>
+</tr>
+<tr>
+<td>泊船後關 LPG 邊個閥？</td>
+<td><strong>氣樽主閥</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_12">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> 救生衣分佈兩舷就 OK——<strong>對：</strong> 必須<strong>易取</strong>、唔可以鎖入櫃</li>
+<li><strong>錯：</strong> 泊好就唔使理 LPG——<strong>對：</strong> 必須關主閥防漏氣</li>
+</ul>
+<hr>
+<h2 id="a4-chart-work-position-fixing-eta">A4 · Chart work, position fixing, ETA</h2>
+<h3 id="_13">點解要學</h3>
+<p>考試一定會出 1–2 題羅經換算 + 1 題定位 / 量距離。基礎數學題，但好多人輸喺 conversion direction。</p>
+<h3 id="_14">核心知識</h3>
+<p><strong>1. 海圖符號 (Chart symbols)：</strong>
+- 香港用 IMO Chart 1 同 Admiralty Chart 慣例
+- <strong>Soundings</strong>（水深數字）以 metres + decimetres 顯示，下劃線表示乾出（drying height）
+- 浮標符號：詳見 A7 (local knowledge) 同 IALA Region A 系統</p>
+<p><strong>2. 定位 (Position fixing) 三大方法：</strong></p>
+<p>(a) <strong>Cross-bearing（交叉方位定位）</strong>
+- 同時量取 2–3 個岸上目標嘅羅經方位
+- 喺海圖上由各目標反方向畫線
+- 線交點 = 你嘅船位
+- 三線唔交於一點 → 形成「cocked hat」誤差三角形，取中心估計</p>
+<p>(b) <strong>Transit（重疊方位）/ Leading marks（導標）</strong>
+- 兩個固定點重疊成一線 = 一條極精準嘅 position line
+- <strong>適合做 transit 嘅目標</strong>（A.30 考點）：
+  - ✓ 點狀清晰物：燈塔、煙囪、雷達塔、山峰
+  - ✗ 範圍模糊物：山脈、煉油廠、橋、船廠</p>
+<p>(c) <strong>GPS / 電子定位</strong>
+- PVOC2 唔深入，但須了解作為備用</p>
+<p><strong>3. 量距離 + ETA 計算：</strong>
+- 海圖上量兩點直線距離（用 latitude scale 1' = 1 nautical mile）
+- ETA = distance ÷ speed（單位：nautical miles ÷ knots = hours）
+- 注意潮流影響：vector diagram 求合速度</p>
+<p><strong>4. 羅經誤差 (Compass errors)：</strong> ⚠ 考試重點</p>
+<table>
+<thead>
+<tr>
+<th>名稱</th>
+<th>來源</th>
+<th>性質</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variation（磁差）</td>
+<td>地球磁極 vs 真北</td>
+<td>隨地點改變</td>
+</tr>
+<tr>
+<td>Deviation（自差）</td>
+<td>船上鐵磁影響</td>
+<td>隨船向改變，查 deviation table</td>
+</tr>
+</tbody>
+</table>
+<p><strong>換算口訣 CADET（Compass → True 加 East）：</strong></p>
+<pre><code>Compass → Magnetic → True
+   +/- Deviation     +/- Variation
+   East ADD          East ADD
+   West SUBTRACT     West SUBTRACT
+</code></pre>
+<p><strong>例（A.24 考題）：</strong>
+- Compass course 040°
+- Deviation 2°E、Variation 2°W
+- Magnetic = 040° + 2°(E) = 042°
+- True = 042° − 2°(W) = <strong>040°</strong> ← 答案 D</p>
+<p><strong>5. 規劃短程航線 (Short passage planning)：</strong>
+- 起點 + 終點 + waypoints
+- 預計時間、燃油、潮汐
+- 報備航行計劃畀岸上</p>
+<p><strong>6. 報告位置：</strong>
+- 經緯度（latitude / longitude）：北緯/東經，時/分/秒
+- 或者「方位 + 距離」由已知 landmark：例「青衣燈塔西南 2 海里」</p>
+<h3 id="_15">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>題目</th>
+<th>答案要點</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Transit bearing 適合用咩物？</td>
+<td><strong>點狀清晰物 + 點狀清晰物</strong>（如煙囪+雷達塔）</td>
+</tr>
+<tr>
+<td>羅經換算口訣？</td>
+<td><strong>CADET：Compass + East = True 大</strong></td>
+</tr>
+<tr>
+<td>量距離單位？</td>
+<td><strong>Latitude scale</strong>, 1' = 1 nautical mile</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_16">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> 山脈做 transit OK——<strong>對：</strong> 範圍太大，唔精準</li>
+<li><strong>錯：</strong> Variation/Deviation 加減方向亂咗——<strong>對：</strong> <strong>East 加，West 減</strong>（兩者都係）</li>
+</ul>
+<hr>
+<h2 id="a5-tides">A5 · Tides</h2>
+<h3 id="_17">點解要學</h3>
+<p>香港潮差雖然唔大（一般 &lt; 2 m），但喺淺水區或者過橋底時都可能令船擱淺 / 撞橋。</p>
+<h3 id="_18">核心知識</h3>
+<p><strong>1. 潮汐成因：</strong>
+- 月球引力（主因）+ 太陽引力 + 地球自轉
+- 香港屬「<strong>混合潮 (mixed semi-diurnal)</strong>」：每日 2 次高潮 2 次低潮，但高度唔等</p>
+<p><strong>2. 潮汐術語：</strong>
+- <strong>High Water (HW)</strong> = 高潮
+- <strong>Low Water (LW)</strong> = 低潮
+- <strong>Range</strong> = HW 高度 − LW 高度
+- <strong>Spring tide（大潮）</strong>：新月或滿月期間，太陽 + 月球同向，range 最大
+- <strong>Neap tide（小潮）</strong>：上 / 下弦月期間，太陽 + 月球互相 90°，range 最細</p>
+<p><strong>3. 香港潮汐資料：</strong>
+- <strong>Hong Kong Tide Tables</strong>（海事處出版）：每年印一次
+- 海圖標記基準：<strong>Chart Datum (CD)</strong> 一般 = lowest astronomical tide
+- 海圖上水深數字 = 自 CD 起計，<strong>實際水深 = 海圖深度 + 當時潮高</strong></p>
+<p><strong>4. Tidal stream（潮流）：</strong>
+- 流動方向 + 速度，隨潮汐改變
+- 影響 ETA 計算（vector addition）
+- 香港某啲水道（如鯉魚門 Lei Yue Mun）潮流可達 3–4 knots</p>
+<p><strong>5. 規則粗判（rule of thumb）：</strong>
+- 漲潮 6 hr → 退潮 6 hr 循環 (semi-diurnal pattern)
+- <strong>十二分之一規則（Twelfths Rule）</strong>：6 小時內 tidal range 變化分布 1/12 + 2/12 + 3/12 + 3/12 + 2/12 + 1/12</p>
+<h3 id="_19">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>題目</th>
+<th>答案要點</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>大潮 / 小潮邊個 range 大？</td>
+<td><strong>大潮 (Spring)</strong></td>
+</tr>
+<tr>
+<td>海圖深度 vs 實際深度？</td>
+<td><strong>實際 = 海圖 + 潮高</strong></td>
+</tr>
+<tr>
+<td>Tide tables 邊個出？</td>
+<td><strong>海事處 Marine Department</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_20">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> 海圖深度等於實際深度——<strong>對：</strong> 必須加上當時潮高</li>
+<li><strong>錯：</strong> 香港冇潮差所以唔使理——<strong>對：</strong> Spring tide 仍可達 2.4 m</li>
+</ul>
+<hr>
+<h2 id="a6-navigation-in-restricted-visibility">A6 · Navigation in restricted visibility</h2>
+<h3 id="_21">點解要學</h3>
+<p>香港夏天回南天霧、冬天有霾，能見度 &lt; 1 海里時，碰撞風險急升。COLREGS Rule 19 + Rule 35 專管呢個情況。</p>
+<h3 id="_22">核心知識</h3>
+<p><strong>1. Safe speed（安全速度）—— COLREGS Rule 6：</strong></p>
+<p>決定 safe speed 嘅因素：
+- <strong>能見度 (visibility)</strong>
+- <strong>交通密度 (traffic density)</strong> ← A.13 考點
+- 操縱性 (manoeuvrability)
+- 夜間燈光背景
+- 風浪流
+- 吃水 (draft) 對應水深
+- Radar 性能（如有）</p>
+<p><strong>2. Rule 19（限制能見度行為）：</strong></p>
+<p>(a) 規則只適用於船隻喺霧 / 暴雨 / 降雪 / 濃煙等限制能見度水域時</p>
+<p>(b) <strong>每艘船</strong>都應：
+- 保持 safe speed
+- 主機隨時可即時操作
+- 加倍 lookout（包括 radar）</p>
+<p>(c) 聽到霧號明顯來自前方時：
+- <strong>減速到 minimum steerage way</strong>
+- 必要時<strong>完全停船</strong> ← A.14 考點
+- 唔可以盲目轉向</p>
+<p>(d) 若 radar 偵測到他船：
+- 早 + 大幅 改變航向 / 速度避碰
+- 但 <strong>唔可以</strong>做以下動作（除非 overtaking）：
+  - 對方喺 abeam 之前 (forward of beam)，向 port 轉
+  - 對方喺 abeam 或者 abaft 嘅，向佢方向轉</p>
+<p><strong>3. Rule 35（限制能見度聲號）：</strong></p>
+<p>每 ≤2 分鐘發一次：</p>
+<table>
+<thead>
+<tr>
+<th>船種</th>
+<th>霧號</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>機動船 underway，making way</td>
+<td><strong>一長聲</strong></td>
+</tr>
+<tr>
+<td>機動船 underway，stopped 無對水移動</td>
+<td><strong>兩長聲</strong>（中間 ~2 秒）</td>
+</tr>
+<tr>
+<td><strong>NUC / RAM / 帆船 / 漁船 / 拖船 / CBD</strong></td>
+<td><strong>一長兩短</strong> ← A.11, A.12 考點</td>
+</tr>
+<tr>
+<td><strong>被拖船</strong></td>
+<td>一長三短（最後一隻發）</td>
+</tr>
+<tr>
+<td>領港船</td>
+<td>一長兩短後 + 4 短聲（區別）</td>
+</tr>
+<tr>
+<td><strong>錨泊船 ≥100 m</strong></td>
+<td>5 秒急鳴 bell（forward）+ 5 秒鑼 (gong) (aft) 每分鐘</td>
+</tr>
+<tr>
+<td><strong>錨泊船 &lt; 100 m</strong></td>
+<td>5 秒急鳴 bell</td>
+</tr>
+<tr>
+<td><strong>擱淺船</strong></td>
+<td>3 響 bell + 5 秒急鳴 bell + 3 響 bell</td>
+</tr>
+</tbody>
+</table>
+<p><strong>記憶法：「I am special, give me space」= 一長兩短</strong></p>
+<p><strong>4. 拖船特殊規則：</strong>
+- 拖船<strong>停咗都仍視為 underway</strong>（係拖緊嘢）
+- 所以<strong>停下無對水移動嘅拖船</strong> 仍係<strong>一長兩短</strong>而唔係兩長 ← A.12 考點</p>
+<p><strong>5. 限制能見度操作：</strong>
+- 開全部燈（夜間 + 日間都要）
+- 通知 VTC 你嘅位置同意圖
+- 收聽 VHF distress channel 16</p>
+<h3 id="_23">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>題目</th>
+<th>答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>帆船 underway 限能見度霧號？</td>
+<td><strong>一長兩短</strong>（Rule 35(c)）</td>
+</tr>
+<tr>
+<td>停咗嘅拖船霧號？</td>
+<td><strong>一長兩短</strong>（仍 underway）</td>
+</tr>
+<tr>
+<td>安全速度因素？</td>
+<td><strong>交通密度等多項</strong></td>
+</tr>
+<tr>
+<td>聽到前方一長聲應該？</td>
+<td><strong>立即減速到 minimum steerage way</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_24">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> 機動船霧號 = 一長兩短——<strong>對：</strong> 機動船 underway making way = <strong>一長</strong>；special vessels (NUC/RAM/帆船/漁船/拖船) 才係一長兩短</li>
+<li><strong>錯：</strong> 拖船停咗就用兩長——<strong>對：</strong> 拖船永遠當 underway = 一長兩短</li>
+</ul>
+<hr>
+<h2 id="a7-local-knowledge-hk-waters">A7 · Local knowledge (HK waters)</h2>
+<h3 id="_25">點解要學</h3>
+<p>呢個 topic 出題佔比好高（10+ 題），全部都係香港特有規則，國際 COLREGS 答唔到。背熟有著數。</p>
+<h3 id="_26">核心知識</h3>
+<p><strong>1. Victoria Harbour 範圍：</strong> 由維港東邊界（鯉魚門 Lei Yue Mun）至西邊界（青洲 Green Island），南北以海岸線界定 [src_visiting_yachts]</p>
+<p><strong>2. Fairways（主要航道）：</strong> <strong>共 16 條 Principal Fairways + 2 條 TSS（分道航行制）</strong> [src_fairways]</p>
+<p>MDN 75/2023（effective 2023-05-05）加入 Urmston Road、Castle Peak、Ha Pang 三條新 fairway，由原 13 條增至 16 條。Marine Department 官方 fairway page 已 reflect 此 update。</p>
+<p>⚠ <strong>舊資料寫 10 條已過時</strong>——應使用 16 + 2 嘅新模型。考試以最新公報為準。</p>
+<p>兩條 TSS：
+- <strong>Tathong Channel TSS</strong>（將軍澳東 — 鯉魚門外）
+- <strong>East Lamma Channel TSS</strong>（南丫島東）
+- COLREGS Rule 10 適用：船隻必須順 traffic lane 行駛，唔可以進入 separation zone（除非緊急或捕魚）</p>
+<p><strong>3. 禁止錨泊區 + 限制 / 禁止入區：</strong></p>
+<ul>
+<li><strong>HKIAAA No. 1, 2, 3, 4</strong> = 絕對禁區（除非處長批准）</li>
+<li><strong>HKIAAA No. 5, 6</strong> = 船高限制 ≤ 15 m</li>
+<li><strong>HKIAAA No. 7, 8</strong> = 船高限制 ≤ 30 m</li>
+</ul>
+<p>法源：Cap. 313A 第 23 條 (6A) 款 + 第五附表第 5–12 段；違者第 3 級罰款 + 6 個月監禁 [src_cap_313a_5sch]</p>
+<p>⚠ <strong>Area 3 + 7</strong> 已於 2022-05-31 依 MDN 105/2022 修訂邊界（13 個新邊界 light buoys 建立），以配合機場三跑道系統 [src_mdn_105_2022]</p>
+<p><strong>記憶法：「1234 唔入、56 矮嘢入、78 高啲都入」</strong></p>
+<p><strong>4. 速度限制 (Speed limits)：</strong> [src_speed_limit]</p>
+<table>
+<thead>
+<tr>
+<th>區域</th>
+<th>限制</th>
+<th>特別</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zone A（一般 typhoon shelter 入口附近）</td>
+<td>5 knots</td>
+<td></td>
+</tr>
+<tr>
+<td>Zone B</td>
+<td>10 knots</td>
+<td></td>
+</tr>
+<tr>
+<td>Zone C</td>
+<td>15 knots</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>典型 typhoon shelter 入口或內</strong></td>
+<td><strong>5 knots</strong></td>
+<td>14 個 typhoon shelters</td>
+</tr>
+<tr>
+<td><strong>K3 Hebe Haven / 白沙灣</strong></td>
+<td><strong>5 knots</strong></td>
+<td><strong>全年生效</strong>——其他季節性</td>
+</tr>
+<tr>
+<td>Fairways 內</td>
+<td>視乎標示</td>
+<td>一般 10–15 knots</td>
+</tr>
+</tbody>
+</table>
+<p><strong>5. Traffic Separation Schemes 同 Rule 10：</strong>
+- 喺 TSS 行駛要順 traffic lane 方向
+- 過 TSS 必須以接近 90° 角度過、唔可以斜過
+- 唔可以喺 separation zone 內錨泊或捕魚
+- 例外：(i) 緊急避免立即危險、(ii) 漁船捕魚（A.16 考點）</p>
+<p><strong>6. Ferry 路線 + 碼頭：</strong>
+- 港內天星小輪、離島渡輪等密集
+- 公眾碼頭（Government public piers）：<strong>只准上落乘客 + 行李，不可裝卸貨物，不可長期 mooring</strong> ← A.23 考點
+- 接近 ferry pier 要慢車 + 預讓 ferry</p>
+<p><strong>7. 安全康樂區 (Safe recreation areas)：</strong>
+- 遊泳浮台、康樂活動區
+- 機動船禁止進入</p>
+<p><strong>8. 高速船燈號：</strong>
+- 香港高速船（如 TurboJET）日間顯示<strong>高速船標記</strong>；夜間顯示 high-intensity blue all-round light 喺最高位 + 一般機動船燈組</p>
+<p><strong>9. 香港帆船 junk lights：</strong>
+- 傳統 sailing junk 可能用煤油燈，較暗 + 可能少燈號 — 加倍小心避讓</p>
+<p><strong>10. 污染同棄置垃圾罰則：</strong>
+- 污染海水 / 棄垃圾入海事最高 HK$200,000 + 監禁 6 個月（Cap. 313）
+- 油污嚴重者罰則更高</p>
+<p><strong>11. IALA Region A buoyage system：</strong>
+- 香港用 <strong>IALA Region A</strong>（亞洲 / 非洲 / 歐洲體系）
+- <strong>進港 (entering harbour)</strong>：
+  - <strong>紅色 can-shaped 浮標</strong> = port hand mark = <strong>保持喺左舷 (port)</strong>
+  - <strong>綠色 conical 浮標</strong> = starboard hand mark = <strong>保持喺右舷 (starboard)</strong>
+- <strong>離港 (leaving harbour)</strong> = 相反
+- <strong>Cardinal marks</strong>：N（黃黑 + 兩三角向上）/ S（黃黑 + 三角向下）/ E（黃黑 + 三角分向上下）/ W（黃黑 + 三角合中）
+- <strong>Isolated danger mark</strong>：黑色，2 個黑球
+- <strong>Safe water mark</strong>：紅白條紋柱，1 個紅球
+- <strong>Special mark</strong>：黃色 X 標誌</p>
+<p><strong>記憶法：「紅左綠右進港，相反離港」</strong>（A.26 考點）</p>
+<p><strong>12. 緊急援助：</strong>
+- VTC（船隻交通中心）：<strong>2233 7801</strong>（主線）；備用線兩個 source 不一：<strong>2233 7802</strong>（PVOC Guidebook）/ <strong>2233 7808</strong>（GovHK Safety Tips）。打 7801 唔通可試兩個 [src_visiting_yachts]
+- MRCC（海事拯救協調中心）：<strong>2233 7999</strong>
+- VHF Channel 16：國際遇險頻道</p>
+<h3 id="_27">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>題目</th>
+<th>答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HKIAAA 邊幾區絕對禁區？</td>
+<td><strong>Areas 1, 2, 3, 4</strong></td>
+</tr>
+<tr>
+<td>進港遇紅 can buoy 點過？</td>
+<td><strong>保持喺 port 側通過</strong></td>
+</tr>
+<tr>
+<td>公眾碼頭可裝貨？</td>
+<td><strong>不可</strong></td>
+</tr>
+<tr>
+<td>喺 TSS 邊個情況可入 separation zone？</td>
+<td><strong>緊急避碰</strong></td>
+</tr>
+<tr>
+<td>Typhoon shelter 速度限？</td>
+<td><strong>5 knots</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_28">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> 香港有 10 條 fairways——<strong>對：</strong> 自 2023-12-18 起係 16 + 2 TSS</li>
+<li><strong>錯：</strong> HKIAAA 全部 8 區都禁入——<strong>對：</strong> 1-4 禁入，5-6 限 15 m，7-8 限 30 m</li>
+<li><strong>錯：</strong> 紅 buoy = right of way——<strong>對：</strong> 紅 buoy = port hand mark，要保持喺左舷</li>
+</ul>
+<hr>
+<h2 id="a8-colregs">A8 · COLREGS（國際海上避碰規則）</h2>
+<h3 id="_29">點解要學</h3>
+<p>PVOC2 出題最多嘅 topic（佔 Part A 約 1/3）。COLREGS 規則必須背熟核心 Rules 5–10、13–18、20–37。</p>
+<h3 id="_30">核心知識</h3>
+<p><strong>1. Rule 5 — Look-out（瞭望）：</strong></p>
+<blockquote>
+<p>「Every vessel shall at all times maintain a proper look-out by sight and hearing... so as to make a full appraisal of the situation and of the risk of collision.」</p>
+</blockquote>
+<p><strong>Look-out 嘅最主要目的：對局面同碰撞危險作出全面評估</strong> ← A.15 考點</p>
+<p>唔係單純睇浮標、能見度、漂浮物。</p>
+<p><strong>2. Rule 6 — Safe speed（見 A6）</strong></p>
+<p><strong>3. Rule 7 — Risk of collision：</strong>
+- 用 radar、compass bearing、目視判斷
+- <strong>Compass bearing 不變 + 距離縮短 = collision risk</strong>
+- 唔可以憑「scanty information」假設冇危險</p>
+<p><strong>4. Rule 8 — Action to avoid collision：</strong>
+- <strong>Early and substantial action</strong>（早 + 大幅）
+- <strong>Positive, clear and seaman-like manner</strong>（明確、清晰、合乎海員技藝）
+- 改變航向比改變速度更易被對方察覺
+- <strong>Reduce speed 係合法避碰行動</strong>（A.1 考點）—— 唔需要硬撼或者轉向，可以減速
+- Rule 8(e)：必要時<strong>停船 / 倒車</strong>
+- Rule 8(f)：唔可以阻礙其他船嘅 passage / safe passage
+- Rule 8(f)(iii)：被阻礙嘅船仍須 take action</p>
+<p><strong>5. Rule 9 — Narrow channels：</strong>
+- 沿 channel 右邊行（starboard side）
+- ≤20 m 船 / 帆船 / 漁船<strong>唔可以阻礙</strong>只能喺 channel 內安全航行嘅大船
+- 唔可以喺 channel 內錨泊（除非緊急）
+- 過 channel 要以接近 90° 角</p>
+<p><strong>6. Rule 10 — Traffic Separation Schemes（見 A7）</strong></p>
+<p><strong>7. Rule 13 — Overtaking：</strong>
+- 後船由前船尾扇形 22.5° 後追上 = overtaking
+- <strong>追越船永遠係 give-way</strong> 直至完全 past and clear
+- 即使後續變成 crossing 角度仍係 overtaking</p>
+<p><strong>8. Rule 14 — Head-on situation：</strong>
+- 兩艘 power-driven vessels 接近正面相遇
+- <strong>兩船都向 starboard 轉</strong>
+- 從對方 port side 通過（red-to-red passing）
+- 一短聲 = 「I am altering my course to starboard」← A.6 考點</p>
+<p><strong>9. Rule 15 — Crossing situation：</strong>
+- 兩艘 power-driven vessels 交叉相遇
+- <strong>見對方喺自己 starboard 側 → 你係 give-way</strong>（要避讓）
+- <strong>記憶法：「見右讓右」</strong>——starboard 右見 vessel = give way</p>
+<p><strong>10. Rule 16 — Action by give-way vessel：</strong>
+- 早 + 大幅 改變
+- 完全避開 stand-on vessel</p>
+<p><strong>11. Rule 17 — Action by stand-on vessel：</strong>
+- (a)(i) 保持 course 同 speed
+- (a)(ii) 可以採取避碰行動（如見 give-way 唔讓）
+- (b) 緊急時必須行動
+- (c) 機動船改向時，<strong>唔可以向 port 轉</strong>（如對方喺 port 側 crossing）
+- (d) 仍唔免除 give-way 嘅義務</p>
+<p>當你係 stand-on 而對方已開始讓 → <strong>保持 course + speed</strong>（A.18 考點）；唔好突然轉向打亂對方計算。</p>
+<p>當對方 give-way 唔讓 → 5 短聲 doubt signal 警告（A.7 考點）</p>
+<p><strong>12. Rule 18 — Pecking order（誰讓誰）：</strong></p>
+<p>由 give-way 至 stand-on（即下方愈嚟愈大隻）：</p>
+<pre><code>1. Power-driven vessel
+2. Sailing vessel
+3. Vessel engaged in fishing
+4. Vessel restricted in ability to manoeuvre (RAM)
+5. Vessel not under command (NUC)
+</code></pre>
+<p>例外：條 9（窄水道）+ 條 10（TSS）+ 條 13（overtaking）優先於條 18。</p>
+<p><strong>13. Rule 19 — Restricted visibility（見 A6）</strong></p>
+<p><strong>14. 燈號 (Lights) — Rules 20–31：</strong></p>
+<h4 id="power-driven-vessel-underway">Power-driven vessel underway（機動船）</h4>
+<ul>
+<li><strong>Mast head light</strong>：白色，前方 + 兩舷 22.5° 後共 225°</li>
+<li><strong>Side lights</strong>：starboard 綠 + port 紅，各前方 + 同舷 22.5° 後 共 112.5°</li>
+<li><strong>Stern light</strong>：白色，正後方 135°</li>
+<li><strong>≥50 m 船</strong>：second mast head light（後 + 高過前）</li>
+</ul>
+<h4 id="sailing-vessel-underway">Sailing vessel underway</h4>
+<ul>
+<li>Side lights + stern light 只</li>
+<li><strong>冇 mast head light</strong></li>
+<li>12 m 以下小帆船可以單一三色燈喺 mast top</li>
+<li>可以<strong>選擇性</strong>展示<strong>紅在上 + 綠在下</strong>喺 mast top（all-round）</li>
+</ul>
+<h4 id="vessels-at-anchor">Vessels at anchor</h4>
+<ul>
+<li>≤50 m：一隻白 all-round light 喺 forepart</li>
+<li>≥50 m：forward 白 all-round + aft 較低白 all-round</li>
+<li>日間：forward 一個黑球 (black ball)</li>
+</ul>
+<h4 id="vessels-aground">Vessels aground（擱淺）</h4>
+<ul>
+<li>錨燈 + 兩個紅 all-round 垂直</li>
+<li>日間：<strong>3 個黑球垂直</strong> ← 唔係遇險信號（A.25 干擾項）</li>
+</ul>
+<h4 id="vessel-not-under-command-nuc">Vessel not under command (NUC)</h4>
+<ul>
+<li><strong>兩個紅 all-round 垂直</strong></li>
+<li>有 way through water：加 side lights + stern light</li>
+<li>日間：<strong>兩個黑球垂直</strong></li>
+</ul>
+<h4 id="vessel-restricted-in-ability-to-manoeuvre-ram">Vessel restricted in ability to manoeuvre (RAM)</h4>
+<ul>
+<li><strong>Red-white-red all-round 垂直</strong></li>
+<li>日間：<strong>球–菱–球 (ball-diamond-ball) 垂直</strong> ← A.19 考試干擾項</li>
+<li>包括 dredging / surveying / launch &amp; recovery / underwater operations</li>
+</ul>
+<h4 id="vessel-constrained-by-draught-cbd">Vessel constrained by draught (CBD)</h4>
+<ul>
+<li>機動船燈號 + <strong>3 個紅 all-round 垂直</strong></li>
+<li>日間：<strong>1 個圓柱形 (cylinder)</strong></li>
+</ul>
+<h4 id="fishing-vessels">Fishing vessels</h4>
+<ul>
+<li><strong>Trawling</strong>：綠 over 白 all-round + side lights + stern light</li>
+<li><strong>Other fishing</strong>（網、釣等）：紅 over 白 all-round + 視乎漁具情況加燈</li>
+<li>日間：兩個錐 (cones) 尖對尖</li>
+</ul>
+<h4 id="pilot-vessel">Pilot vessel</h4>
+<ul>
+<li><strong>白 over 紅 all-round</strong> + side lights + stern light</li>
+<li>日間：冇特定（屬機動船）</li>
+</ul>
+<h4 id="towing">Towing</h4>
+<ul>
+<li>拖船 mast head：<strong>2 個白 (towing length ≤200 m)</strong> 或 <strong>3 個白 (&gt;200 m)</strong> 垂直</li>
+<li>
+<ul>
+<li>機動船一般燈</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Yellow towing light 喺 stern light 上方</li>
+</ul>
+</li>
+<li>日間：拖長 &gt;200 m → 兩船都係菱形 (diamond shape)</li>
+</ul>
+<p><strong>15. 號標 (Day shapes)：</strong></p>
+<table>
+<thead>
+<tr>
+<th>形狀</th>
+<th>意義</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 個球 forward</td>
+<td>錨泊</td>
+</tr>
+<tr>
+<td>3 球垂直</td>
+<td>擱淺</td>
+</tr>
+<tr>
+<td>球-菱-球垂直</td>
+<td>RAM</td>
+</tr>
+<tr>
+<td>2 個球垂直</td>
+<td>NUC</td>
+</tr>
+<tr>
+<td>1 個錐尖向下</td>
+<td>帆船 + 用機動行進 (motor-sailing)</td>
+</tr>
+<tr>
+<td>1 個圓柱</td>
+<td>CBD</td>
+</tr>
+<tr>
+<td>2 個錐尖對尖</td>
+<td>漁船</td>
+</tr>
+</tbody>
+</table>
+<p><strong>16. 聲號 (Sound signals)：</strong></p>
+<p>短聲 = 1 秒；長聲 = 4–6 秒。</p>
+<h4 id="manoeuvring-warningrule-34-ok">Manoeuvring &amp; warning（Rule 34，能見度 OK）</h4>
+<table>
+<thead>
+<tr>
+<th>信號</th>
+<th>意義</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 短</td>
+<td>"I am altering my course to <strong>starboard</strong>"</td>
+</tr>
+<tr>
+<td>2 短</td>
+<td>"I am altering my course to <strong>port</strong>"</td>
+</tr>
+<tr>
+<td>3 短</td>
+<td>"I am operating astern propulsion"（倒車）</td>
+</tr>
+<tr>
+<td>5 或更多短，急</td>
+<td>Doubt signal "I doubt your action is sufficient to avoid collision"</td>
+</tr>
+<tr>
+<td>1 長</td>
+<td>接近彎位 / 阻礙視線 / 駛離碼頭</td>
+</tr>
+</tbody>
+</table>
+<h4 id="narrow-channel-overtakingrule-34c">Narrow channel overtaking（Rule 34(c)）</h4>
+<table>
+<thead>
+<tr>
+<th>信號</th>
+<th>意義</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2 長 1 短</strong></td>
+<td>"I intend to overtake on your <strong>starboard</strong> side"</td>
+</tr>
+<tr>
+<td><strong>2 長 2 短</strong></td>
+<td>"I intend to overtake on your <strong>port</strong> side"</td>
+</tr>
+<tr>
+<td>1 長 1 短 1 長 1 短</td>
+<td>被追越船同意</td>
+</tr>
+</tbody>
+</table>
+<h4 id="distresscolregs-annex-iv">Distress（遇險，COLREGS Annex IV）</h4>
+<p>(a) 槍聲或其他爆炸聲（每 1 分鐘 1 響）
+(b) <strong>連續鳴笛聲</strong> ← 遇險（A.25 考點）
+(c) 信號火箭、星彈
+(d) 任何方法發 SOS（•••−−−•••）摩斯
+(e) 「Mayday」廣播
+(f) <strong>N over C 國際旗號</strong> (Annex IV §1(f))
+(g) <strong>方旗 + 球</strong>（上方或下方）(Annex IV §1(g)) ← <strong>A.19 考點圖示最可能係呢個</strong>
+(h) <strong>船上有火焰</strong> ← 遇險
+(i) 紅色降落傘信號
+(j) <strong>橙色煙</strong> ← 遇險（注意：白色煙<strong>唔係</strong> distress）
+(k) 慢慢、有規律地伸縮兩臂
+(l) DSC 遇險警告
+(m) EPIRB 信號
+(n) 其他無線電遇險信號</p>
+<p><strong>A.25 考點：邊啲信號可作遇險？</strong>
+- 白煙 ✗（橙煙才係）
+- 火焰 ✓
+- 連續鳴笛 ✓
+- 三個黑球垂直 ✗（係 aground）</p>
+<h3 id="_31">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>題目</th>
+<th>答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Look-out 主要目的？</td>
+<td><strong>全面評估局面同碰撞危險</strong></td>
+</tr>
+<tr>
+<td>Head-on 兩船點做？</td>
+<td><strong>兩船都向 starboard 轉</strong></td>
+</tr>
+<tr>
+<td>Crossing：對方喺 starboard 點做？</td>
+<td><strong>你係 give-way，要讓</strong></td>
+</tr>
+<tr>
+<td>Stand-on 見對方讓緊點做？</td>
+<td><strong>保持 course + speed</strong></td>
+</tr>
+<tr>
+<td>12 m 以下船 NUC 號型免除？</td>
+<td><strong>可免除</strong>（diving 例外）</td>
+</tr>
+<tr>
+<td>帆船 underway 限能見度？</td>
+<td><strong>一長兩短</strong></td>
+</tr>
+<tr>
+<td>窄水道 starboard 追越聲號？</td>
+<td><strong>2 長 1 短</strong></td>
+</tr>
+<tr>
+<td>遇險信號邊個 NOT？</td>
+<td><strong>白煙 + 三黑球</strong>（白煙非橙煙；三黑球係 aground）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_32">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> Stand-on 永遠保持 course——<strong>對：</strong> 對方唔讓時要採取避碰</li>
+<li><strong>錯：</strong> 三個黑球 = 遇險——<strong>對：</strong> 三個黑球 = aground</li>
+<li><strong>錯：</strong> 白煙 = distress——<strong>對：</strong> 必須係<strong>橙煙</strong></li>
+</ul>
+<hr>
+<h2 id="a9-safety-equipment">A9 · Safety equipment</h2>
+<h3 id="_33">點解要學</h3>
+<p>法律規定遊樂船必須配備 LSA（Life-Saving Appliances）+ FFA（Fire-Fighting Appliances）+ distress signals。考試會測知識 + 用法 + 維護。</p>
+<h3 id="_34">核心知識</h3>
+<p><strong>1. 法定要求 (Statutory requirements)：</strong> [src_pvoc_guide]</p>
+<p>按 Cap. 548 + 細則，PVOC2 級遊樂船 (length ≤15 m) 須配備：
+- 救生衣（每人一件） ✓
+- 救生圈（≥2 個，連 light + smoke + buoyant line）
+- 滅火器（按船長分配）
+- VHF radio
+- 紅色降落傘信號 + 橙色煙 + 手提火炬
+- Bilge pump
+- Torch / 防水電筒
+- 急救包</p>
+<p><strong>2. LSA 正確使用：</strong></p>
+<p>(a) <strong>Lifejackets（救生衣）</strong>
+- 每人一件、size 配身
+- 兒童 / 嬰兒專用 size
+- 顏色顯眼（橙、黃）
+- 維護：定期 inspection 拉鏈、whistle、retro-reflective tape</p>
+<p>(b) <strong>Lifebuoys（救生圈）</strong>
+- 至少 2 個，分置 port + starboard
+- 配備 self-igniting light + self-activating smoke + buoyant line
+- 用法：MOB（man overboard）即時拋落水（A.38 考點）</p>
+<p>(c) <strong>Buoyant items</strong>：船上座位等亦可作浮力物（緊急時）</p>
+<p><strong>3. LSA 擺放原則：</strong> ⚠ <strong>A.36 考點</strong></p>
+<blockquote>
+<p><strong>「可即時使用 + 易取位置」</strong></p>
+</blockquote>
+<p>唔可以：
+- 鎖入櫃
+- 放座位下嘅深箱（需開啟）
+- 由船長個人喜好分配</p>
+<p><strong>4. LSA 維護程序：</strong>
+- 每年由 authorized agent 服務（lifejacket、lifebuoy retro tape、smoke canister 過期日期）
+- 每次出航前目視檢查
+- 過期 immediately 換</p>
+<p><strong>5. Distress signals：</strong> （詳見 A8 + A.25）</p>
+<p>(a) <strong>Red flares (hand-held / parachute)</strong>：
+- Hand-held：射程低，海面近距離求救
+- Parachute：射程 ~300 m 高，遠距離</p>
+<p>(b) <strong>Orange smoke signal</strong>：
+- 日間用，可飄 ~3 分鐘
+- <strong>白煙非 distress</strong></p>
+<p>維護：放防潮容器、check 過期日。</p>
+<h3 id="_35">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>題目</th>
+<th>答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>救生衣放邊？</td>
+<td><strong>可即時使用 + 易取位置</strong></td>
+</tr>
+<tr>
+<td>MOB 第一動作？</td>
+<td><strong>拋救生圈</strong> + 喊 + 指</td>
+</tr>
+<tr>
+<td>邊啲滅火器適合電氣火？</td>
+<td><strong>CO₂</strong>（A.35 考點）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_36">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> 救生衣分兩舷就 OK——<strong>對：</strong> 必須<strong>易取</strong>而唔係單純分布</li>
+<li><strong>錯：</strong> 白煙係 distress——<strong>對：</strong> 必須<strong>橙煙</strong></li>
+</ul>
+<hr>
+<h2 id="a10-use-of-vhf">A10 · Use of VHF</h2>
+<h3 id="_37">點解要學</h3>
+<p>VHF 係海上溝通命脈。考試一定會問 channel 用途同遇險程序。</p>
+<h3 id="_38">核心知識</h3>
+<p><strong>1. VHF radiotelephone procedure：</strong></p>
+<p>接收：
+- 全程開機，monitor Channel 16
+- 聽到 own callsign 即接</p>
+<p>發送：
+- Press-to-talk (PTT) 後等 1 秒先講（避免 cut head）
+- 講嘅次序：對方 callsign → 自己 callsign → message → "OVER"
+- 話完成 = "OUT"</p>
+<p><strong>2. 香港 VHF 頻道體系：</strong> [src_vts_vscp]</p>
+<p>⚠ <strong>絕對唔好簡化「CH 67 = 香港通用 incident channel」</strong>——香港有 5 個 sectors</p>
+<table>
+<thead>
+<tr>
+<th>Channel</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CH 02</strong></td>
+<td>Harbour East sector</td>
+</tr>
+<tr>
+<td><strong>CH 12</strong></td>
+<td>Eastern Approaches sector</td>
+</tr>
+<tr>
+<td><strong>CH 14</strong></td>
+<td>Harbour sector</td>
+</tr>
+<tr>
+<td><strong>CH 63</strong></td>
+<td>Lantau South sector</td>
+</tr>
+<tr>
+<td><strong>CH 67</strong></td>
+<td>Western Approaches sector</td>
+</tr>
+<tr>
+<td>CH 16</td>
+<td><strong>國際遇險、安全、呼叫頻道</strong></td>
+</tr>
+<tr>
+<td>CH 20</td>
+<td>Marine Department safety broadcasts（廣播）</td>
+</tr>
+<tr>
+<td>CH 74</td>
+<td>Kwai Chung Control Station (KCCS)——<strong>唔係 VTC sector</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>A.20 考點</strong>：題目顯示某地圖區域 → 答對應 sector 嘅 channel。如圖示為香港西邊水域（屯門、大嶼山西、大澳）→ Western Approaches sector → <strong>CH 67</strong>。但呢個係<strong>因區而異</strong>，唔係話 CH 67 係全港通用。</p>
+<p><strong>3. Distress 程序：</strong></p>
+<p>呼叫格式（VHF Channel 16）：</p>
+<pre><code>MAYDAY MAYDAY MAYDAY
+This is [vessel name] [vessel name] [vessel name]
+MAYDAY [vessel name]
+Position: [latitude/longitude OR bearing/distance from landmark]
+Nature of distress: [fire/sinking/MOB/grounding etc.]
+Number of persons on board: [N]
+Assistance required: [tow/rescue/medical etc.]
+OVER
+</code></pre>
+<p>非 distress 但需要援助 = <strong>PAN-PAN PAN-PAN PAN-PAN</strong>（緊急但非生命威脅）</p>
+<p>醫療緊急 = <strong>MEDICO</strong>（routine medical advice）</p>
+<p><strong>4. A.20 細節：嚴重受傷報告：</strong></p>
+<p>題目：圖示某區域 (Western Approaches)，船上嚴重受傷。<strong>用 CH 67</strong> 通報 VTC（屬該 sector 嘅頻道）。但若不知 sector，<strong>CH 16 係 fallback</strong>。</p>
+<p><strong>5. A.21 細節：違規舉報：</strong></p>
+<p>發現他船喺 speed-restricted zone 超速 → <strong>致電 Harbour Patrol Section（手機）</strong>，唔係 VTC。VTC 處理 navigational safety；Harbour Patrol 處理 enforcement。</p>
+<p><strong>6. A.9 細節：海事處船特殊聲號：</strong></p>
+<p>聽到海事處船發出<strong>一短一長兩短</strong>（汽笛）= 命令你立即停船。</p>
+<h3 id="_39">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>題目</th>
+<th>答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>西區水域嚴重受傷用邊個 channel？</td>
+<td><strong>CH 67</strong>（Western Approaches sector）</td>
+</tr>
+<tr>
+<td>國際遇險頻道？</td>
+<td><strong>CH 16</strong></td>
+</tr>
+<tr>
+<td>Speed zone 超速舉報？</td>
+<td><strong>Harbour Patrol Section</strong>（手機）</td>
+</tr>
+<tr>
+<td>海事處船一短一長兩短？</td>
+<td><strong>立即停船</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_40">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> CH 67 全港通用——<strong>對：</strong> CH 67 只係 Western Approaches sector</li>
+<li><strong>錯：</strong> 超速舉報用 VHF——<strong>對：</strong> Harbour Patrol Section 手機</li>
+</ul>
+<hr>
+<h2 id="a11-marine-department-services">A11 · Marine Department services</h2>
+<h3 id="_41">點解要學</h3>
+<p>知道邊個部門做咩 + 點聯絡，緊急時唔會打錯電話。</p>
+<h3 id="_42">核心知識</h3>
+<p><strong>1. Vessel Traffic Centre (VTC)：</strong> [src_visiting_yachts]</p>
+<ul>
+<li>監察香港水域船隻動態</li>
+<li>發出 Radio navigation warnings (RNW)</li>
+<li>24/7 運作</li>
+<li><strong>電話：2233 7801 / 2233 7808</strong></li>
+<li>VHF：5 個 sectors（見 A10）</li>
+</ul>
+<p><strong>2. Marine Rescue Co-ordination Centre (MRCC)：</strong> [src_mrcc]</p>
+<ul>
+<li>統籌 Search and Rescue (SAR)</li>
+<li>處理 Mayday / Pan-Pan</li>
+<li><strong>電話：2233 7999</strong></li>
+<li>VHF：CH 16 + DSC</li>
+</ul>
+<p><strong>3. Notices to Mariners (NTM)：</strong></p>
+<ul>
+<li>海事處出版，告知水域變更（新沉船、浮標移位、新規例）</li>
+<li>月報（permanent corrections）+ 即時公告（urgent notices）</li>
+<li>遊樂船船長有責任跟進</li>
+</ul>
+<p><strong>4. Marine Department Notices (MDN)：</strong></p>
+<ul>
+<li>政策、規例、行政公告</li>
+<li>例：MDN 105/2022 修訂 HKIAAA Area 3 邊界</li>
+</ul>
+<p><strong>5. 緊急援助 cascade：</strong></p>
+<pre><code>立即生命危險 → MAYDAY (CH 16) → MRCC 2233 7999
+緊急但非生命 → PAN-PAN (CH 16)
+航行警告 / 一般 → VTC 2233 7801 / 7808
+違規舉報 → Harbour Patrol Section
+</code></pre>
+<h3 id="_43">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>題目</th>
+<th>答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MRCC 電話？</td>
+<td><strong>2233 7999</strong></td>
+</tr>
+<tr>
+<td>VTC 電話？</td>
+<td><strong>2233 7801 / 7808</strong></td>
+</tr>
+<tr>
+<td>邊個處理 navigation warning？</td>
+<td><strong>VTC</strong></td>
+</tr>
+<tr>
+<td>海事處船汽笛一短一長兩短？</td>
+<td><strong>立即停船</strong>（A.9 考點）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_44">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> Mayday 打 VTC——<strong>對：</strong> Mayday 經 CH 16 → MRCC</li>
+</ul>
+<hr>
+<h2 id="a12-storm-signals-and-weather">A12 · Storm signals and weather</h2>
+<h3 id="_45">點解要學</h3>
+<p>香港夏天颱風頻繁，知道風球意義 + 相應行動先可以保命。</p>
+<h3 id="_46">核心知識</h3>
+<p><strong>1. 香港熱帶氣旋警告系統：</strong></p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>意義</th>
+<th>相應海面</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>No. 1</strong>（戒備）</td>
+<td>颱風 800 km 內</td>
+<td>開始有 swell，能見度可能降</td>
+</tr>
+<tr>
+<td><strong>No. 3</strong>（強風）</td>
+<td>預期香港陣風 41–62 km/h（持續 22–33 knots）</td>
+<td>海面變壞，small craft 應入避風塘</td>
+</tr>
+<tr>
+<td><strong>No. 8 NW/SW/NE/SE</strong>（烈風 / 暴風）</td>
+<td>持續風 63–117 km/h（34–63 knots）</td>
+<td><strong>絕對唔可以出海</strong>；已出海需立即返港</td>
+</tr>
+<tr>
+<td>No. 9 / 10</td>
+<td>風力 ≥ 118 km/h</td>
+<td>颱風已襲港</td>
+</tr>
+<tr>
+<td><strong>強烈季候風信號</strong> (Strong Monsoon Signal)</td>
+<td>持續 22+ knots（東 / 南北季候風）</td>
+<td>與 No. 3 類似海面，但成因唔係 tropical cyclone</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2. Wave height 因素：</strong>（A.40 考點）</p>
+<p>決定波高三大因素 (FSD)：
+- <strong>Fetch（吹程）</strong> ← 最關鍵 ← A.40 答案 A
+- <strong>Wind speed（風速）</strong>
+- <strong>Duration（吹咗幾耐）</strong></p>
+<p><strong>錯選項：水溫、潮汐方向、濕度</strong>——都唔係主因。</p>
+<p><strong>3. 天氣資料來源：</strong>
+- HKO（香港天文台）官方網 + app
+- HKO marine forecast 每 6 小時更新
+- VHF Channel 20 海事處廣播
+- 地面風 + 海面風差異：海面通常風大過岸 30%</p>
+<p><strong>4. 解讀資料：</strong>
+- 風向 = 風由邊嚟（西南風 = 由西南吹來）
+- 浪向不一定同風向；可能 swell 由遠方傳來
+- 留意「風力陣風 (gust) 高出持續風 30–50%」</p>
+<p><strong>5. 本地天氣 patterns：</strong>
+- 夏季：偏南氣流 + 颱風（5–10 月）
+- 冬季：東北季候風（11–4 月）
+- 春季：回南天霧（1–4 月，能見度可降至 &lt; 100 m）
+- 夏季暴雨突發 + thunderstorm</p>
+<p><strong>6. Beaufort Wind Scale（蒲福風級）：</strong> 0–12 級</p>
+<table>
+<thead>
+<tr>
+<th>級</th>
+<th>knots</th>
+<th>海面狀態</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>&lt;1</td>
+<td>calm</td>
+</tr>
+<tr>
+<td>3</td>
+<td>7–10</td>
+<td>gentle breeze, small wavelets</td>
+</tr>
+<tr>
+<td>5</td>
+<td>17–21</td>
+<td>fresh breeze, moderate waves</td>
+</tr>
+<tr>
+<td>7</td>
+<td>28–33</td>
+<td>near gale, white foam streaks</td>
+</tr>
+<tr>
+<td>8</td>
+<td>34–40</td>
+<td>gale, moderately high waves</td>
+</tr>
+<tr>
+<td>10</td>
+<td>48–55</td>
+<td>storm, very high waves</td>
+</tr>
+<tr>
+<td>12</td>
+<td>≥64</td>
+<td>hurricane</td>
+</tr>
+</tbody>
+</table>
+<p><strong>7. 颱風前準備（A.34 擴展）：</strong>
+- 移船入 typhoon shelter
+- 加 fender + 多條 mooring lines
+- LPG 主閥關閉
+- Loose items 收落艙
+- 喺擁擠 buoy mooring → <strong>加 fender</strong>（避免 與其他船相撞）</p>
+<h3 id="_47">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>題目</th>
+<th>答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wave height 主因？</td>
+<td><strong>Fetch</strong></td>
+</tr>
+<tr>
+<td>No. 8 風球海面點？</td>
+<td><strong>絕對唔可出海</strong></td>
+</tr>
+<tr>
+<td>颱風前 buoy mooring 點做？</td>
+<td><strong>加 fender</strong>（A.34）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_48">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> No. 3 可以出海——<strong>對：</strong> No. 3 已 small craft warning，不宜出</li>
+<li><strong>錯：</strong> 水溫決定浪高——<strong>對：</strong> Fetch + wind + duration</li>
+</ul>
+<hr>
+<h2 id="a13-handling-of-emergency-situations">A13 · Handling of emergency situations</h2>
+<h3 id="_49">點解要學</h3>
+<p>緊急情況出題佔比高（A.13 / A.16 / A.34 / A.37 / A.38 等）。每種情況有 standard procedure。</p>
+<h3 id="_50">核心知識</h3>
+<p><strong>1. 碰撞 (Collision)：</strong></p>
+<p>立即動作：
+1. <strong>保持冷靜 + 戴上 lifejackets</strong>
+2. 評估損壞：如 hull 破裂入水，啟動 bilge pump
+3. 如有人受傷，提供急救
+4. <strong>書面報告海事處</strong>（Cap. 548 法定義務）← A.39 考點
+5. 交換船名、船長姓名、保險資料
+6. <strong>唔可以</strong>未經處長同意離開現場</p>
+<p><strong>2. 擱淺 (Grounding)：</strong>（B.16 考點）</p>
+<p>立即動作：
+1. <strong>停所有主機</strong>
+2. <strong>檢查機艙、主機、tail shaft 有冇損壞</strong>
+3. <strong>用 bilge pump 抽積水</strong>
+4. <strong>唔可以盲目加油門離開</strong>——可能毀壞 propeller / hull
+5. <strong>唔可以拋油 / 棄貨</strong>——污染海洋兼違法</p>
+<p>正確答案組合 = <strong>(i) + (ii) + (iii)</strong></p>
+<p><strong>3. 入水 (Leak)：</strong>
+- 即時定位漏點
+- 用 emergency plug / wedge / 木塞堵
+- Bilge pump 全開
+- 如無法控制，發 distress + 戴 lifejackets</p>
+<p><strong>4. 火警 (Fire)：</strong>
+- 詳見 A.35（CO₂ 救電氣）+ B21
+- 切斷燃料供應 + 通風
+- 用適當滅火器
+- 通知 MRCC</p>
+<p><strong>5. 失舵 (Loss of steering)：</strong></p>
+<p>A.37 考點：</p>
+<p><strong>淺水區失舵 → 立即下錨防擱淺</strong> + 顯示 NUC 信號（兩紅燈或兩黑球）+ VHF 通知</p>
+<p><strong>深水區失舵：</strong>
+- 啟用 emergency tiller（如有）
+- 用 differential thrust（雙引擎船）
+- 拋 sea anchor 穩定船向
+- VHF 通知 + 等拖救</p>
+<p><strong>6. 失動力 (Loss of propulsion)：</strong>
+- 如喺 channel → 立即下錨
+- 顯示 NUC 信號
+- VHF 通知 VTC</p>
+<p><strong>7. 失錨：</strong>
+- 用 spare anchor（如有）
+- 駛入安全水域 / typhoon shelter</p>
+<p><strong>8. Partial disable（部分失能）：</strong>
+- 視乎情況決定 self-rescue / 求救
+- 慢車回港時持續 monitor 系統</p>
+<p><strong>9. 擱淺自救 (Beaching)：</strong>
+- 緊急情況下故意擱淺於沙灘救人
+- 揀<strong>沙質淺灘</strong>避開岩石
+- 順浪上岸 + 引擎及時停</p>
+<p><strong>10. 援助遇險船 (Assistance to vessels in distress)：</strong>
+- COLREGS 賦予義務（unless danger to own vessel）
+- 即使非本意亦可 invoke salvage law
+- 通知 MRCC</p>
+<p><strong>11. 操作員義務：</strong>
+- 操作期間不可飲酒 / 服用影響判斷藥物
+- 確保所有乘客安全
+- 維持 logbook</p>
+<p><strong>12. 穩性 / trim：</strong>
+- 重物均勻分布
+- 避免 free surface effect（敞口液體晃動）
+- 啟航前確認 trim（船平衡）</p>
+<p><strong>13. Man overboard (MOB)：</strong> ← A.29 + A.38 考點</p>
+<p>立即動作（<strong>口訣 STP</strong>）：
+1. <strong>Shout</strong> "Man Overboard!" 通知全船
+2. <strong>Throw</strong> lifebuoy（即時標示位置 + 提供浮力）← <strong>首要動作</strong>（A.38）
+3. <strong>Point</strong>：派專人持續指住落水者位置</p>
+<p>之後：
+4. 喊 throttle to neutral
+5. <strong>Williamson Turn</strong>：硬轉（一邊全舵 60° 後，另一邊全舵 180°）→ 沿原航跡返
+6. <strong>Reciprocal course = 原航向 + 180°</strong>（A.29 考點）
+   - 例：SSE (157.5°) → reciprocal NNW (337.5°)
+7. 接近 MOB 上風，停車救援
+8. VHF Mayday 同 MRCC</p>
+<h3 id="_51">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>題目</th>
+<th>答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>擱淺三件事？</td>
+<td><strong>(i)+(ii)+(iii)：停主機、檢查損壞、抽水</strong></td>
+</tr>
+<tr>
+<td>淺水失舵首要？</td>
+<td><strong>立即下錨</strong></td>
+</tr>
+<tr>
+<td>MOB 首要動作？</td>
+<td><strong>拋救生圈</strong></td>
+</tr>
+<tr>
+<td>SSE 反方向航向？</td>
+<td><strong>NNW</strong>（+180°）</td>
+</tr>
+<tr>
+<td>颱風 buoy mooring 防護？</td>
+<td><strong>加 fender</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_52">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> 擱淺加油門離開——<strong>對：</strong> 停主機 + 抽水 + 等救援</li>
+<li><strong>錯：</strong> MOB 派人落水救——<strong>對：</strong> 先拋圈 + 用船救</li>
+<li><strong>錯：</strong> 拋油令船浮——<strong>對：</strong> 違法 + 污染</li>
+</ul>
+<hr>
+<h2 id="a14-accident-reports">A14 · Accident reports</h2>
+<h3 id="_53">點解要學</h3>
+<p>香港法律規定某啲海事意外<strong>必須書面報告</strong>海事處。考試會出邊啲意外要報。</p>
+<h3 id="_54">核心知識</h3>
+<p><strong>1. 必須書面報告嘅 reportable accidents：</strong> [src_examrules]</p>
+<p>按 Cap. 548 + 細則：
+- ✓ <strong>碰撞 (Collision)</strong>——船與船 / 港口設施
+- ✓ <strong>擱淺 (Grounding / Stranding)</strong>
+- ✓ <strong>火警 / 爆炸 (Fire / Explosion)</strong>
+- ✓ <strong>人員傷亡</strong> (death, serious injury, missing persons)
+- ✓ <strong>油污 / 海水污染</strong> (Pollution)
+- ✓ <strong>船舶失蹤 / 沉沒</strong> (Loss / Sinking)
+- ✓ <strong>失動力 / 失舵 喺繁忙水域</strong>（如導致 close-quarters situation）</p>
+<p><strong>2. 唔需向海事處書面報告嘅：</strong> ← A.39 考題</p>
+<ul>
+<li>✗ 船員生病（屬醫療事項）</li>
+<li>✗ 乘客錢包被偷（屬警方刑事案）</li>
+<li>✗ 船上吵架（屬警方治安）</li>
+<li>✓ <strong>船與港口設施碰撞</strong> ← A.39 答案 D</li>
+</ul>
+<p><strong>3. 報告時限：</strong>
+- 一般 24 小時內以 form MD 嗰啲（具體 form number 視意外類別）
+- 嚴重者立即電話通知 + 後補書面</p>
+<p><strong>4. 報告內容：</strong>
+- 船名、註冊號、船長姓名
+- 意外時間、地點、天氣、能見度
+- 事件經過、損失、傷亡
+- 採取嘅行動</p>
+<p><strong>5. 唔報嘅後果：</strong>
+- 罰款 + 監禁（Cap. 548 條文）
+- 影響牌照續期 / 申請</p>
+<h3 id="_55">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>題目</th>
+<th>答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>邊樣意外要書面報？</td>
+<td><strong>碰撞 / 擱淺 / 火警 / 傷亡 / 污染</strong></td>
+</tr>
+<tr>
+<td>A.39 邊個要報？</td>
+<td><strong>D 船 vs 港口設施碰撞</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_56">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> 偷竊都要報海事處——<strong>對：</strong> 偷竊報警，海事處唔處理</li>
+<li><strong>錯：</strong> 細嘅碰撞唔使報——<strong>對：</strong> 任何碰撞都要報</li>
+</ul>
+<hr>
+<h2 id="prerequisitemd818-2025-06-30">⚠ 重要 prerequisite：MD818 醫療證明（2025-06-30 起）</h2>
+<p>由 2025-06-30 起，<strong>所有</strong> PVOC2 申請人（包括首次考試）都必須提供有效嘅 <strong>MD818 Medical Fitness Certificate</strong>。MD818 必須由 Marine Department 認可醫生簽發（清單見 https://www.mardep.gov.hk/filemanager/en/share/pub-services/pdf/list_rmp.pdf）。</p>
+<p>呢個係 2025 年最重大嘅 regulatory change。如果你係跟 2024 或更早嘅 study material 準備，可能完全冇提到 MD818。<strong>冇 MD818 = 唔可以申請 PVOC 證書，即使考試 pass 都拎唔到牌。</strong></p>
+<hr>
+<h2 id="part-a">Part A 結語</h2>
+<p>呢 14 個 topics 覆蓋官方 syllabus 全部要求。每個 topic 都帶 [src_xxx] 來源引用，對應 handoff_v22.json 嘅 source_manifest。考前重溫策略：</p>
+<ol>
+<li><strong>A8 COLREGS</strong> 考最多——背熟燈號、聲號、Rules 13–18</li>
+<li><strong>A7 Local knowledge</strong> 全部係香港特有，背 fairways（16 + 2）、speed limits、HKIAAA、IALA buoyage</li>
+<li><strong>A4 Chart work</strong> 必出羅經換算——背 CADET 口訣</li>
+<li><strong>A13 Emergency</strong> 出題比例高——記每個 scenario 嘅<strong>首要動作</strong></li>
+<li><strong>A14 Accident reports</strong> 留意「邊啲要報，邊啲唔使」呢類二選題</li>
+</ol>
+<p>考試 45 分鐘 40 題 → 平均 67 秒一題。<strong>先做有信心，圖示題（A.19/20/22/27）唔肯定就估或者 mark 後做</strong>。</p>
+<h1 id="logistics">報考流程詳細 logistics（補充）</h1>
+<p>呢一章補充原 Part A A11（Marine Department services）以外嘅實務 logistics — 即考試報名、體檢、申請發牌嘅 step-by-step 程序。<strong>完全初學者必讀。</strong></p>
+<h2 id="1-peak">1. PEAK 試場資料</h2>
+<ul>
+<li><strong>地址</strong>：1/F, VTC Tower, 27 Wood Road, Wanchai, Hong Kong（<strong>1 字樓</strong>，唔係 9 字樓 — 9 字樓係 PEAK 總辦事處）</li>
+<li><strong>辦公時間</strong>：星期一至五 09:00–19:30/20:00；星期六 09:00–12:00。星期日同公眾假期休息</li>
+<li><strong>電話</strong>：2919 1467 / 2919 1468 / 2919 1478</li>
+<li><strong>Email</strong>：cpdc@vtc.edu.hk</li>
+</ul>
+<h2 id="2-lead-time">2. 報名 lead time</h2>
+<ul>
+<li><strong>郵寄報名</strong>：考試前<strong>至少 10 個工作天</strong></li>
+<li><strong>網上報名</strong>：考試前<strong>至少 3 個工作天</strong></li>
+</ul>
+<p>實際 cut-off 仲視乎座位空缺。熱門月份（如夏天）可能要提前一個月以上 book。</p>
+<h2 id="3">3. 體檢</h2>
+<h3 id="md687">MD687 驗眼</h3>
+<ul>
+<li><strong>簽發人</strong>：註冊醫生（Cap. 161）或 註冊視光師 Part I/II（Cap. 359F）</li>
+<li><strong>Valid 期</strong>：65 歲以下 <strong>24 個月</strong>；65 歲及以上 <strong>12 個月</strong></li>
+<li><strong>典型費用</strong>：HK$300 起（視診所而定）；HKSF 連結 Mr. Siu Chi Chung 視光師 21–23 Leighton Road, Causeway Bay 為例</li>
+<li><strong>建議</strong>：考試之前 book 好驗眼，唔係考完先做</li>
+</ul>
+<h3 id="md818">MD818 體檢</h3>
+<ul>
+<li><strong>簽發人</strong>：必須喺 Marine Department 認可醫生名單上 — https://www.mardep.gov.hk/filemanager/en/share/pub-services/pdf/list_rmp.pdf</li>
+<li><strong>適用時間</strong>：2025-06-30 起所有 candidate</li>
+<li><strong>典型費用</strong>：視診所而定（可幾百至過千）</li>
+</ul>
+<h2 id="4-md682-hk220">4. 申請發牌（MD682 + HK$220）</h2>
+<p>雙過後<strong>三個申請途徑</strong>揀一個：</p>
+<h3 id="41-ebs">4.1 網上 eBS（推介，最快）</h3>
+<ul>
+<li>URL：https://ebs.mardep.gov.hk/eBS3PublicForm</li>
+<li>上載：填好嘅 MD682 PDF + 個人相 + PEAK 雙過 result slip</li>
+<li>收 HK$220 demand note，網上交費</li>
+<li>通常 1–3 星期收電郵通知，可由 Marine Department 官網下載電子證書</li>
+</ul>
+<h3 id="42">4.2 親身遞交</h3>
+<ul>
+<li>地址：River Trade &amp; Local Examination Section, <strong>3/F Harbour Building, 38 Pier Road, Central</strong></li>
+<li>帶齊：MD682 + HKID 正本 + MD687 + MD818 + PEAK result slip + HK$220</li>
+<li>即場辦理，較快</li>
+</ul>
+<h3 id="43">4.3 郵寄</h3>
+<ul>
+<li>寄去同一地址（3/F Harbour Building）</li>
+<li>銀行本票或劃線支票 HK$220，抬頭「<strong>The Government of the Hong Kong Special Administrative Region</strong>」</li>
+</ul>
+<h2 id="5-re-sit">5. Re-sit 政策</h2>
+<ul>
+<li>不過 → 至少<strong>等 28 日</strong>先可以再 book（Exam Rules §5.8）</li>
+<li>一過一不過 → 失敗嗰部分要重考；過咗嘅一部分<strong>保留 2 年</strong>（PVOC Guide Chapter 2）</li>
+<li>兩部都不過 → 全部重考</li>
+</ul>
+<h2 id="6">6. 改期 / 退考</h2>
+<ul>
+<li><strong>必須書面通知，考試前至少 10 個工作天</strong></li>
+<li>一般只允許改期 1 次（exceptional circumstances 除外）（Exam Rules §5.4.4）</li>
+</ul>
+<h2 id="7">7. 颱風 / 黑雨安排</h2>
+<ul>
+<li>早上 06:00 時仍懸掛 8 號或以上 / 黑色暴雨警告 → 上午場取消</li>
+<li>上午 11:30 時仍懸掛 → 下午場取消</li>
+<li>（Exam Rules §5.4.11）</li>
+</ul>
+<h2 id="8">8. 考試當日攜帶</h2>
+<ul>
+<li><strong>HKID 正本或護照</strong>（必須，否則唔俾入場）— Exam Rules §5.4.6</li>
+<li>文具（筆 pencil + eraser）</li>
+<li>❌ <strong>不可以</strong>帶散紙、書、計算機（除官方提供）、手機（必須關機放包）</li>
+<li>❌ <strong>不可以</strong>抄題目出考場（罰則：12 個月禁考）</li>
+</ul>
+<h2 id="9">9. 完成全程估計時間</h2>
+<p>由 0 開始 → 拎到牌：
+- 體檢（MD687 + MD818）：1–2 星期
+- Book PEAK 考試：1–4 星期（視乎 availability）
+- 考試到 result slip：即日（考完 1 小時下載）
+- 申請 MD682 → 電子證書：1–3 星期</p>
+<p><strong>Total realistic：4–10 星期</strong></p>
+<h2 id="10-valid">10. 證書 valid 期</h2>
+<ul>
+<li><strong>65 歲前</strong>：證書一直有效，到 65 歲生日當日 expire</li>
+<li><strong>65 歲後</strong>：可以申請續期，<strong>每次 3 年（最多 1 次續，即可到 71 歲）</strong></li>
+<li><strong>71 歲後</strong>：每年續一次</li>
+<li>過期前 6 個月可申請續期</li>
+<li>證書而家由 Marine Department 網站下載（電子），唔再寄紙本</li>
+</ul>
+<h2 id="11-pvoc2">11. PVOC2 同船牌嘅分別 ⚠ 重要</h2>
+<p><strong>PVOC2 = 操作員 (person) 嘅資格證書。</strong> 唔等於可以揸船出海。</p>
+<p>如要實際操作一艘船，仲需要：
+1. <strong>船嘅 Class IV operating licence</strong>（船牌） — 屬於船，唔屬於人
+2. <strong>第三者責任保險</strong> — 至少 HK$5,000,000；如載 &gt;12 個收費乘客則 HK$10,000,000
+3. <strong>規定下適用嘅其他批准</strong>（如商業用途、釣魚等）</p>
+<p>法源：Cap. 548 Merchant Shipping (Local Vessels) Ordinance</p>
+<p>呢個係<strong>好多人混淆嘅地方</strong> — 拎咗 PVOC2 但用無牌船 = 一樣係違法。</p></article>
+
+  </main>
+  <footer class="site-footer">
+    <p>Staging — non-official. Verify on <a href="https://www.mardep.gov.hk/" rel="noreferrer">mardep.gov.hk</a> before booking exam. <a href="about.html">Known limitations</a></p>
+  </footer>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

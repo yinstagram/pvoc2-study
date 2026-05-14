@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f1f2f">
+  <title>B15 · PVOC2 學習</title>
+  <link rel="manifest" href="../manifest.json">
+  <link rel="icon" href="../assets/icons/pvoc2-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="exam-mode topic-page">
+  <header class="topbar">
+    <a class="brand" href="../index.html" aria-label="PVOC2 首頁"><span class="brand-mark">PV</span><span>PVOC2 學習</span></a>
+    <div class="mode-switch" role="group" aria-label="模式切換">
+      <a class="mode-pill " href="../index.html">Story Mode</a>
+      <a class="mode-pill active" href="../exam.html">Exam Mode</a>
+    </div>
+    <button class="icon-btn" type="button" data-theme-toggle aria-label="切換深淺色">◐</button>
+  </header>
+  <nav class="scroll-nav" aria-label="主要導覽"><a class="nav-link" href="../index.html">故事</a><a class="nav-link" href="../exam.html">考試流程</a><a class="nav-link" href="../parta.html">Part A</a><a class="nav-link" href="../partb.html">Part B</a><a class="nav-link" href="../questions.html">題庫</a><a class="nav-link" href="../mock.html">Mock</a><a class="nav-link" href="../wrongbook.html">錯題本</a><a class="nav-link" href="../cheatsheet.html">小抄</a><a class="nav-link" href="../faq.html">FAQ</a><a class="nav-link" href="../sources.html">Sources</a></nav>
+  <main>
+    
+<section class="page-head compact">
+  <p class="eyebrow">Topic B15</p>
+  <h1>B15 · Engines — Construction, pre-start, starting &amp; stopping</h1>
+  <p>13 題題庫 tagged 到呢個 topic。</p>
+</section>
+<section class="story-hook">
+  <img loading="lazy" decoding="async" src="../assets/img/story_diesel.webp" alt="">
+  <div><p class="eyebrow">Story Hook</p><h2>Chapter 3: Diesel 1913 失蹤之謎</h2><p>Rudolf Diesel 唔係只係「柴油機」個名咁簡單。根據 Britannica 整理：佢 1858 年出世，1890 年代發展出壓縮點火引擎，1897 年成功示範高效率四衝程 compression ignition engine。到 1913 年 9 月，Diesel 由 Antwerp 登…</p><a class="btn ghost" href="../stories/ch03_diesel_1913.html">讀完整故事</a></div>
+</section>
+<section class="learn-callout"><h2>由故事學知識</h2><p>先用故事建立記憶錨，再用下面原文內容逐點補齊考試語言。</p></section>
+<section class="plain-toggle-row"><button class="btn ghost" data-toggle-target="#plain-content">Plain mode toggle</button></section>
+<article id="plain-content" class="md-content topic-doc"><h2 id="b15-engines-construction-pre-start-starting-stopping">B15 · Engines — Construction, pre-start, starting &amp; stopping</h2>
+<h3 id="_1">點解要學</h3>
+<p>呢個 topic 係 Part B 嘅基礎，唔識引擎結構就讀唔通後面 6 個 topics。<strong>最少 5 題</strong>。</p>
+<h3 id="_2">核心知識</h3>
+<p><strong>1. Internal Combustion Engine (ICE) 兩大類：</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Diesel（柴油）</th>
+<th>Petrol（汽油 / 船外機）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>點火方式</td>
+<td><strong>壓縮自燃</strong> (compression ignition)</td>
+<td><strong>火花塞點火</strong> (spark ignition)</td>
+</tr>
+<tr>
+<td>壓縮比</td>
+<td>高 (15:1 to 22:1)</td>
+<td>低 (8:1 to 12:1)</td>
+</tr>
+<tr>
+<td>燃料</td>
+<td>柴油（marine diesel oil, MDO）</td>
+<td>汽油（PULP）</td>
+</tr>
+<tr>
+<td>排氣</td>
+<td>較髒（黑煙較多）</td>
+<td>較乾淨</td>
+</tr>
+<tr>
+<td>應用</td>
+<td>大部分船內機（inboard）</td>
+<td>細小船外機（outboard）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2. 4-stroke 循環：</strong> ⚠ <strong>B.1 圖解題核心</strong></p>
+<p>四個衝程，曲軸轉 2 圈完成一循環：</p>
+<table>
+<thead>
+<tr>
+<th>衝程</th>
+<th>活塞方向</th>
+<th>進氣門</th>
+<th>排氣門</th>
+<th>動作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. <strong>Intake（進氣）</strong></td>
+<td>↓</td>
+<td>開</td>
+<td>關</td>
+<td>吸入空氣（柴油）/ 油氣混合（汽油）</td>
+</tr>
+<tr>
+<td>2. <strong>Compression（壓縮）</strong></td>
+<td>↑</td>
+<td>關</td>
+<td>關</td>
+<td>壓縮</td>
+</tr>
+<tr>
+<td>3. <strong>Power（動力）</strong></td>
+<td>↓</td>
+<td>關</td>
+<td>關</td>
+<td>燃燒推動</td>
+</tr>
+<tr>
+<td>4. <strong>Exhaust（排氣）</strong></td>
+<td>↑</td>
+<td>關</td>
+<td><strong>開</strong></td>
+<td>排出廢氣</td>
+</tr>
+</tbody>
+</table>
+<p><strong>記憶法：「Suck, Squeeze, Bang, Blow」</strong></p>
+<p><strong>B.1 答案 D（排氣）的圖示</strong>：活塞向上 + 排氣門開。</p>
+<p><strong>3. Cylinder liner（氣缸套）類型：</strong> ⚠ <strong>B.2 考點</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Wet liner（濕式）</th>
+<th>Dry liner（乾式）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>接觸冷卻水</td>
+<td>✓ 直接接觸</td>
+<td>✗ 套外仍有 engine block 壁</td>
+</tr>
+<tr>
+<td>套壁厚度</td>
+<td>較厚（要承水壓）</td>
+<td><strong>較薄</strong>（靠 block 支撐）</td>
+</tr>
+<tr>
+<td>散熱效率</td>
+<td>較佳（直接）</td>
+<td>經 block 傳導</td>
+</tr>
+<tr>
+<td>維修</td>
+<td>易換</td>
+<td>較複雜</td>
+</tr>
+</tbody>
+</table>
+<p><strong>B.2 答案 D：(i) 不接觸冷卻水 + (iii) 較薄</strong> = dry liner 特徵。</p>
+<p><strong>4. 汽油機構造：</strong></p>
+<p>(a) <strong>Carburettor（化油器）</strong> — 將汽油霧化 + 混合空氣
+- 噴口 (jet) 容易堵 → 加速無力（B.29 考點）</p>
+<p>(b) <strong>Spark plug（火花塞）</strong> — 點火裝置</p>
+<p>(c) <strong>Distributor（分火器）</strong> — 順序分配高壓電到各汽缸火花塞
+- <strong>4-stroke：分火器轉速 = 曲軸轉速嘅 1/2</strong> ← B.4 考點
+- 點解？4-stroke 一個循環曲軸轉 2 圈，每個汽缸只點火 1 次</p>
+<p>(d) <strong>Choke（冷阻）</strong> — 啟動汽油機時：
+- 限制空氣 → <strong>油氣混合變濃</strong> (richer mixture)
+- 容易燃點
+- ⚠ <strong>B.3 考點</strong>：題目問「節氣門 (throttle) 係咪用嚟令油氣混合更濃 / 易燃」 → <strong>答 D：(i) (ii) 全不對</strong>——應該係 <strong>choke</strong> 而唔係 throttle</p>
+<p><strong>5. 柴油機構造：</strong></p>
+<p>(a) <strong>燃油噴射系統 (Fuel injection)：</strong></p>
+<p>兩種：
+- <strong>Conventional（傳統）</strong>：燃油泵 → 高壓噴油管 → 噴油器
+- <strong>Common rail（共軌）</strong>：高壓泵 → rail（蓄壓器）→ 噴油器
+  - <strong>噴射壓力由 limiting valve 調節</strong> ← B.5 考點
+  - 高壓泵打油到 rail，多餘油由 limiting valve 釋放回油缸
+  - 噴油器只負責噴射，<strong>唔調壓</strong></p>
+<p>(b) <strong>燃油等級：</strong>
+- Marine diesel（船用柴油）— 一般係深褐色
+- <strong>紅色柴油</strong> = 香港《應課稅品（碳氫油類標記及染色）規例》規定免稅工業 / 船用柴油 染紅，以區別於要稅嘅道路柴油 ← B.40 考點</p>
+<p><strong>6. 冷卻系統 (Cooling system)：</strong></p>
+<p>兩種：</p>
+<p>(a) <strong>Direct (raw water) cooling</strong>：海水直接入引擎冷卻
+- 簡單，但海水會腐蝕、結垢
+- Thermostat 開啟溫度較<strong>低</strong>（避免海水結垢）</p>
+<p>(b) <strong>Indirect (closed circuit) cooling</strong>：
+- 引擎用淡水冷卻 → 淡水經 heat exchanger 散熱到海水
+- 引擎接觸淡水唔腐蝕
+- Thermostat 開啟溫度較<strong>高</strong></p>
+<p>⚠ <strong>B.18 考點</strong>：兩種 thermostat 不可互換，因為：(i) <strong>原理不同</strong> + (ii) <strong>操作溫度不同</strong>。答案 B。</p>
+<p><strong>7. Wet silencer（濕式消音管）系統：</strong> ⚠ <strong>B.8 考點</strong></p>
+<ul>
+<li>引擎排氣管混入海水冷卻 + 消音 + 排出</li>
+<li><strong>海水來源 = 引擎海水冷卻系統</strong>（B.8 答案 A）</li>
+<li>唔係 independent pump</li>
+</ul>
+<p><strong>8. Pre-start inspection 8 項：</strong> [src_examrules §8.1.B.15.b]</p>
+<p>(i) Unrestricted movement — 螺旋槳唔會被纜繩、漁網纏住
+(ii) Engine + propeller mounting integrity — 螺絲、bolt 牢固
+(iii) Fuel oil system — 油位、油喉無漏
+(iv) <strong>Lubricating oil</strong>：
+- Inboard：crankcase oil + gearbox oil
+- <strong>Outboard：gearcase oil（齒輪箱油）</strong>
+(v) <strong>Outboard 特殊：fuel/lube oil proportion</strong> — 2-stroke 船外機要混 oil 入汽油（一般 50:1）
+(vi) Cooling system — 海水入口 strainer 唔塞、淡水水位足夠
+(vii) Engine + gearbox control — 油門、波檔測試
+(viii) Steering gear — 全方位試</p>
+<p><strong>9. 啟動程序 (Starting procedures)：</strong> ⚠ <strong>B.14 考點</strong></p>
+<p><strong>小型船外汽油機啟動 兩個首要步驟：</strong>
+1. <strong>將 lower unit / gearbox 降到水線以下</strong>（確保水冷系統有水）
+2. <strong>確認波檔在 neutral</strong>（避免啟動瞬間突然衝出）</p>
+<p>之後：
+3. 揸 choke（如冷機）
+4. Open throttle 少少
+5. 拉啟動繩 / 按 starter button</p>
+<p><strong>10. 啟動後即時要 check：</strong> ⚠ <strong>B.12 考點</strong></p>
+<ul>
+<li>(i) 冷卻水溫度錶：<strong>仍冷</strong>（剛啟動）</li>
+<li>(ii) <strong>潤滑油壓力錶：到設計壓力 (designed pressure)</strong> ← 答案</li>
+<li>(iii) 轉速錶：<strong>idle（怠速）</strong>，唔係 rated speed</li>
+</ul>
+<p><strong>11. 反覆 / 長時間啟動嘅影響：</strong>
+- 起動 motor 過熱 + 損耗
+- 電池過度放電
+- Cylinder 入過多油（柴油未燒）</p>
+<p><strong>12. Warming up + cooling down：</strong></p>
+<ul>
+<li><strong>Warming up</strong>：低 RPM 怠速 5–10 分鐘，待 jacket water 達 ~60°C 才加負荷</li>
+<li>點解？避免 cylinder liner / piston 急速 thermal stress</li>
+<li><strong>Cooling down</strong>：到岸前低 RPM 5 分鐘</li>
+<li>點解？等 turbocharger（如有）冷卻 + 防止熱點 (hot spot)</li>
+</ul>
+<p><strong>13. 停車程序 (Stopping procedures)：</strong> ⚠ <strong>B.15 考點</strong></p>
+<p><strong>柴油機正常停車 = 切斷燃油供應</strong> (cut off fuel supply)
+- 唔係切空氣（air intake）—— 嗰個係 emergency
+- 唔係切電源 —— 柴油機冇火花塞，切電唔停
+- <strong>B.15 答案 B</strong></p>
+<p><strong>14. 機艙安全程序 (Securing machinery space)：</strong>
+- 關燃油 main valve
+- 關 sea cock（海水入口閥）
+- 切斷 battery main switch（如長期不用）
+- 通風確保無積聚易燃氣體</p>
+<h3 id="_3">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>題目</th>
+<th>答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4-stroke 排氣衝程？</td>
+<td><strong>活塞 ↑ + 排氣門開</strong></td>
+</tr>
+<tr>
+<td>Dry liner 特徵？</td>
+<td><strong>不接觸冷卻水 + 較薄</strong></td>
+</tr>
+<tr>
+<td>4-stroke distributor 速度？</td>
+<td><strong>曲軸 1/2</strong></td>
+</tr>
+<tr>
+<td>Common rail 噴射壓力由邊個調？</td>
+<td><strong>Limiting valve</strong></td>
+</tr>
+<tr>
+<td>啟動小船外機首兩步？</td>
+<td><strong>Lower gearbox 入水 + neutral</strong></td>
+</tr>
+<tr>
+<td>啟動後油壓錶顯示？</td>
+<td><strong>設計壓力</strong></td>
+</tr>
+<tr>
+<td>柴油機正常停車？</td>
+<td><strong>切燃油</strong></td>
+</tr>
+<tr>
+<td>Wet silencer 海水來源？</td>
+<td><strong>引擎海水冷卻系統</strong></td>
+</tr>
+<tr>
+<td>Choke 作用？</td>
+<td>令油氣濃 + 易燃；<strong>唔係 throttle</strong></td>
+</tr>
+<tr>
+<td>紅色柴油點解？</td>
+<td><strong>應課稅品條例規定染色</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_4">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> 啟動汽油機用 throttle 變濃——<strong>對：</strong> 用 <strong>choke</strong></li>
+<li><strong>錯：</strong> 切電源停柴油機——<strong>對：</strong> 切<strong>燃油</strong></li>
+<li><strong>錯：</strong> Wet 同 Dry liner 散熱方式一樣——<strong>對：</strong> Wet 直接接觸水，Dry 經 block 傳</li>
+</ul>
+<hr></article>
+<section class="quiz-panel" data-topic-quiz="B15">
+  <div class="section-head"><p class="eyebrow">Mini Quiz</p><h2>B15 快測</h2></div>
+  <div class="quiz-root"></div>
+</section>
+
+  </main>
+  <footer class="site-footer">
+    <p>Staging — non-official. Verify on <a href="https://www.mardep.gov.hk/" rel="noreferrer">mardep.gov.hk</a> before booking exam. <a href="../about.html">Known limitations</a></p>
+  </footer>
+  <script type="module" src="../assets/js/app.js"></script>
+</body>
+</html>

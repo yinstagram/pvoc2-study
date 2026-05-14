@@ -1,0 +1,18 @@
+{
+  "name": "PVOC2 學習網站",
+  "short_name": "PVOC2",
+  "description": "Story-first PVOC2 self-study site for local review.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f1f2f",
+  "theme_color": "#0f1f2f",
+  "icons": [
+    {
+      "src": "assets/icons/pvoc2-icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">PVOC2 boat licence icon</title>
+  <desc id="desc">A small boat on water with a licence card.</desc>
+  <rect width="512" height="512" rx="92" fill="#0f1f2f"/>
+  <path d="M80 335c52 28 104 28 156 0s104-28 156 0c18 10 34 14 52 14v54c-44 0-79-20-108-33-44-20-82 20-132 27-40 6-76-8-124-31z" fill="#6fb7c7"/>
+  <path d="M101 268h247l-43 72H145z" fill="#f5f2ea"/>
+  <path d="M160 178l134 60H160z" fill="#e15b42"/>
+  <path d="M160 134v104" stroke="#f5f2ea" stroke-width="18" stroke-linecap="round"/>
+  <rect x="318" y="132" width="112" height="84" rx="10" fill="#e0b848"/>
+  <path d="M340 160h68M340 188h48" stroke="#0f1f2f" stroke-width="12" stroke-linecap="round"/>
+  <text x="256" y="450" fill="#f5f2ea" text-anchor="middle" font-family="system-ui, sans-serif" font-size="54" font-weight="800">PVOC2</text>
+</svg>
