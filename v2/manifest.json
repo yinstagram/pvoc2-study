@@ -1,0 +1,13 @@
+{
+  "name": "PVOC2 學習 v2",
+  "short_name": "PVOC2 v2",
+  "description": "二級遊樂船牌互動學習網站 — editorial edition",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FBFBFA",
+  "theme_color": "#FBFBFA",
+  "icons": [
+    { "src": "assets/icons/pvoc2-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

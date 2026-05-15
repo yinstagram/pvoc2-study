@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">IALA Region A lateral marks</title>
+  <desc id="desc">A red port-hand can mark and a green starboard-hand conical mark with a simple channel arrow.</desc>
+  <rect width="1200" height="680" fill="#0f1f2f"/>
+  <path d="M130 530 C260 460 350 465 470 530 C610 600 760 595 1070 500" fill="none" stroke="#6fb7c7" stroke-width="34" stroke-linecap="round" opacity=".8"/>
+  <path d="M607 522 l86 -28 l-42 80z" fill="#6fb7c7" opacity=".8"/>
+  <g transform="translate(245 165)">
+    <ellipse cx="0" cy="300" rx="118" ry="24" fill="#102132"/>
+    <path d="M-95 115 h190 v185 c0 34 -190 34 -190 0z" fill="#d22d2d"/>
+    <ellipse cx="0" cy="115" rx="95" ry="22" fill="#ff4747"/>
+    <path d="M-88 96 c26 -72 150 -72 176 0z" fill="#f6d84a"/>
+    <rect x="-12" y="10" width="24" height="85" fill="#f6d84a"/>
+    <circle cx="0" cy="0" r="16" fill="#f6d84a"/>
+    <text x="0" y="372" text-anchor="middle" fill="#e9f2f4" font-family="system-ui, sans-serif" font-size="34">PORT</text>
+    <text x="0" y="412" text-anchor="middle" fill="#e9f2f4" font-family="system-ui, sans-serif" font-size="28">red can</text>
+  </g>
+  <g transform="translate(920 155)">
+    <ellipse cx="0" cy="310" rx="118" ry="24" fill="#102132"/>
+    <path d="M-95 145 h190 v165 c0 34 -190 34 -190 0z" fill="#16864c"/>
+    <ellipse cx="0" cy="145" rx="95" ry="22" fill="#25b566"/>
+    <path d="M0 28 l88 102 h-176z" fill="#25b566"/>
+    <rect x="-12" y="20" width="24" height="80" fill="#25b566"/>
+    <text x="0" y="382" text-anchor="middle" fill="#e9f2f4" font-family="system-ui, sans-serif" font-size="34">STARBOARD</text>
+    <text x="0" y="422" text-anchor="middle" fill="#e9f2f4" font-family="system-ui, sans-serif" font-size="28">green cone</text>
+  </g>
+  <text x="600" y="72" text-anchor="middle" fill="#e9f2f4" font-family="Georgia, serif" font-size="44">IALA Region A</text>
+  <text x="600" y="118" text-anchor="middle" fill="#b7c9d2" font-family="system-ui, sans-serif" font-size="26">entering from seaward</text>
+</svg>

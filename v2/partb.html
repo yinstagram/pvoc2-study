@@ -1,0 +1,1132 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FBFBFA">
+  <title>Part B · PVOC2 學習</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icons/pvoc2-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="exam-mode ">
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="PVOC2 首頁"><span class="brand-mark">PV</span><span>PVOC2 學習</span></a>
+    <div class="mode-switch" role="group" aria-label="模式切換">
+      <a class="mode-pill " href="index.html">Story Mode</a>
+      <a class="mode-pill active" href="exam.html">Exam Mode</a>
+    </div>
+    <button class="icon-btn" type="button" data-theme-toggle aria-label="切換深淺色"></button>
+  </header>
+  <nav class="scroll-nav" aria-label="主要導覽"><a class="nav-link" href="index.html">故事</a><a class="nav-link" href="exam.html">考試流程</a><a class="nav-link" href="parta.html">Part A</a><a class="nav-link" href="partb.html">Part B</a><a class="nav-link" href="questions.html">題庫</a><a class="nav-link" href="mock.html">Mock</a><a class="nav-link" href="wrongbook.html">錯題本</a><a class="nav-link" href="cheatsheet.html">小抄</a><a class="nav-link" href="faq.html">FAQ</a><a class="nav-link" href="sources.html">Sources</a></nav>
+  <main>
+    
+<section class="page-head compact"><p class="eyebrow">Part B</p><h1>Engineering Knowledge</h1></section>
+<section class="topic-grid"><a class="topic-card" href="topics/B15.html">
+  <span class="badge">B15</span>
+  <strong>B15 · Engines — Construction, pre-start, starting &amp; stopping</strong>
+</a>
+<a class="topic-card" href="topics/B16.html">
+  <span class="badge">B16</span>
+  <strong>B16 · Duties while underway</strong>
+</a>
+<a class="topic-card" href="topics/B17.html">
+  <span class="badge">B17</span>
+  <strong>B17 · Batteries and electrical equipment</strong>
+</a>
+<a class="topic-card" href="topics/B18.html">
+  <span class="badge">B18</span>
+  <strong>B18 · Trouble shooting and remedies at sea</strong>
+</a>
+<a class="topic-card" href="topics/B19.html">
+  <span class="badge">B19</span>
+  <strong>B19 · Maintenance</strong>
+</a>
+<a class="topic-card" href="topics/B20.html">
+  <span class="badge">B20</span>
+  <strong>B20 · Safe operation of deck equipment</strong>
+</a>
+<a class="topic-card" href="topics/B21.html">
+  <span class="badge">B21</span>
+  <strong>B21 · Fire fighting and fire prevention</strong>
+</a></section>
+<article class="md-content full-doc"><h1 id="part-b-engineering-knowledge">Part B 學習內容 (Engineering Knowledge)</h1>
+<blockquote>
+<p><strong>重要：</strong> 同 Part A 一樣，呢份內容由 Claude 依官方文件整理 + ChatGPT 5 輪審核，每事實都有 source 引用。</p>
+<p><strong>格式：</strong> 同 Part A — 「點解學」/「核心知識」/「考試重點」/「易錯陷阱」。</p>
+<p><strong>Part B 特色：</strong> Engineering 嘢比 Part A 抽象，<strong>圖解 + 實物理解</strong>比死背更重要。如果完全冇接觸過引擎，建議睇 YouTube「4-stroke engine animation」幾分鐘先讀呢份。</p>
+<p><strong>共 7 個 topics：B15–B21</strong></p>
+</blockquote>
+<hr>
+<h2 id="b15-engines-construction-pre-start-starting-stopping">B15 · Engines — Construction, pre-start, starting &amp; stopping</h2>
+<h3 id="_1">點解要學</h3>
+<p>呢個 topic 係 Part B 嘅基礎，唔識引擎結構就讀唔通後面 6 個 topics。<strong>最少 5 題</strong>。</p>
+<h3 id="_2">核心知識</h3>
+<p><strong>1. Internal Combustion Engine (ICE) 兩大類：</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Diesel（柴油）</th>
+<th>Petrol（汽油 / 船外機）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>點火方式</td>
+<td><strong>壓縮自燃</strong> (compression ignition)</td>
+<td><strong>火花塞點火</strong> (spark ignition)</td>
+</tr>
+<tr>
+<td>壓縮比</td>
+<td>高 (15:1 to 22:1)</td>
+<td>低 (8:1 to 12:1)</td>
+</tr>
+<tr>
+<td>燃料</td>
+<td>柴油（marine diesel oil, MDO）</td>
+<td>汽油（PULP）</td>
+</tr>
+<tr>
+<td>排氣</td>
+<td>較髒（黑煙較多）</td>
+<td>較乾淨</td>
+</tr>
+<tr>
+<td>應用</td>
+<td>大部分船內機（inboard）</td>
+<td>細小船外機（outboard）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2. 4-stroke 循環：</strong> Note: <strong>B.1 圖解題核心</strong></p>
+<p>四個衝程，曲軸轉 2 圈完成一循環：</p>
+<table>
+<thead>
+<tr>
+<th>衝程</th>
+<th>活塞方向</th>
+<th>進氣門</th>
+<th>排氣門</th>
+<th>動作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. <strong>Intake（進氣）</strong></td>
+<td>↓</td>
+<td>開</td>
+<td>關</td>
+<td>吸入空氣（柴油）/ 油氣混合（汽油）</td>
+</tr>
+<tr>
+<td>2. <strong>Compression（壓縮）</strong></td>
+<td>↑</td>
+<td>關</td>
+<td>關</td>
+<td>壓縮</td>
+</tr>
+<tr>
+<td>3. <strong>Power（動力）</strong></td>
+<td>↓</td>
+<td>關</td>
+<td>關</td>
+<td>燃燒推動</td>
+</tr>
+<tr>
+<td>4. <strong>Exhaust（排氣）</strong></td>
+<td>↑</td>
+<td>關</td>
+<td><strong>開</strong></td>
+<td>排出廢氣</td>
+</tr>
+</tbody>
+</table>
+<p><strong>記憶法：「Suck, Squeeze, Bang, Blow」</strong></p>
+<p><strong>B.1 答案 D（排氣）的圖示</strong>：活塞向上 + 排氣門開。</p>
+<p><strong>3. Cylinder liner（氣缸套）類型：</strong> Note: <strong>B.2 考點</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Wet liner（濕式）</th>
+<th>Dry liner（乾式）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>接觸冷卻水</td>
+<td>✓ 直接接觸</td>
+<td>× 套外仍有 engine block 壁</td>
+</tr>
+<tr>
+<td>套壁厚度</td>
+<td>較厚（要承水壓）</td>
+<td><strong>較薄</strong>（靠 block 支撐）</td>
+</tr>
+<tr>
+<td>散熱效率</td>
+<td>較佳（直接）</td>
+<td>經 block 傳導</td>
+</tr>
+<tr>
+<td>維修</td>
+<td>易換</td>
+<td>較複雜</td>
+</tr>
+</tbody>
+</table>
+<p><strong>B.2 答案 D：(i) 不接觸冷卻水 + (iii) 較薄</strong> = dry liner 特徵。</p>
+<p><strong>4. 汽油機構造：</strong></p>
+<p>(a) <strong>Carburettor（化油器）</strong> — 將汽油霧化 + 混合空氣
+- 噴口 (jet) 容易堵 → 加速無力（B.29 考點）</p>
+<p>(b) <strong>Spark plug（火花塞）</strong> — 點火裝置</p>
+<p>(c) <strong>Distributor（分火器）</strong> — 順序分配高壓電到各汽缸火花塞
+- <strong>4-stroke：分火器轉速 = 曲軸轉速嘅 1/2</strong> ← B.4 考點
+- 點解？4-stroke 一個循環曲軸轉 2 圈，每個汽缸只點火 1 次</p>
+<p>(d) <strong>Choke（冷阻）</strong> — 啟動汽油機時：
+- 限制空氣 → <strong>油氣混合變濃</strong> (richer mixture)
+- 容易燃點
+- Note: <strong>B.3 考點</strong>：題目問「節氣門 (throttle) 係咪用嚟令油氣混合更濃 / 易燃」 → <strong>答 D：(i) (ii) 全不對</strong>——應該係 <strong>choke</strong> 而唔係 throttle</p>
+<p><strong>5. 柴油機構造：</strong></p>
+<p>(a) <strong>燃油噴射系統 (Fuel injection)：</strong></p>
+<p>兩種：
+- <strong>Conventional（傳統）</strong>：燃油泵 → 高壓噴油管 → 噴油器
+- <strong>Common rail（共軌）</strong>：高壓泵 → rail（蓄壓器）→ 噴油器
+  - <strong>噴射壓力由 limiting valve 調節</strong> ← B.5 考點
+  - 高壓泵打油到 rail，多餘油由 limiting valve 釋放回油缸
+  - 噴油器只負責噴射，<strong>唔調壓</strong></p>
+<p>(b) <strong>燃油等級：</strong>
+- Marine diesel（船用柴油）— 一般係深褐色
+- <strong>紅色柴油</strong> = 香港《應課稅品（碳氫油類標記及染色）規例》規定免稅工業 / 船用柴油 染紅，以區別於要稅嘅道路柴油 ← B.40 考點</p>
+<p><strong>6. 冷卻系統 (Cooling system)：</strong></p>
+<p>兩種：</p>
+<p>(a) <strong>Direct (raw water) cooling</strong>：海水直接入引擎冷卻
+- 簡單，但海水會腐蝕、結垢
+- Thermostat 開啟溫度較<strong>低</strong>（避免海水結垢）</p>
+<p>(b) <strong>Indirect (closed circuit) cooling</strong>：
+- 引擎用淡水冷卻 → 淡水經 heat exchanger 散熱到海水
+- 引擎接觸淡水唔腐蝕
+- Thermostat 開啟溫度較<strong>高</strong></p>
+<p>Note: <strong>B.18 考點</strong>：兩種 thermostat 不可互換，因為：(i) <strong>原理不同</strong> + (ii) <strong>操作溫度不同</strong>。答案 B。</p>
+<p><strong>7. Wet silencer（濕式消音管）系統：</strong> Note: <strong>B.8 考點</strong></p>
+<ul>
+<li>引擎排氣管混入海水冷卻 + 消音 + 排出</li>
+<li><strong>海水來源 = 引擎海水冷卻系統</strong>（B.8 答案 A）</li>
+<li>唔係 independent pump</li>
+</ul>
+<p><strong>8. Pre-start inspection 8 項：</strong> [src_examrules §8.1.B.15.b]</p>
+<p>(i) Unrestricted movement — 螺旋槳唔會被纜繩、漁網纏住
+(ii) Engine + propeller mounting integrity — 螺絲、bolt 牢固
+(iii) Fuel oil system — 油位、油喉無漏
+(iv) <strong>Lubricating oil</strong>：
+- Inboard：crankcase oil + gearbox oil
+- <strong>Outboard：gearcase oil（齒輪箱油）</strong>
+(v) <strong>Outboard 特殊：fuel/lube oil proportion</strong> — 2-stroke 船外機要混 oil 入汽油（一般 50:1）
+(vi) Cooling system — 海水入口 strainer 唔塞、淡水水位足夠
+(vii) Engine + gearbox control — 油門、波檔測試
+(viii) Steering gear — 全方位試</p>
+<p><strong>9. 啟動程序 (Starting procedures)：</strong> Note: <strong>B.14 考點</strong></p>
+<p><strong>小型船外汽油機啟動 兩個首要步驟：</strong>
+1. <strong>將 lower unit / gearbox 降到水線以下</strong>（確保水冷系統有水）
+2. <strong>確認波檔在 neutral</strong>（避免啟動瞬間突然衝出）</p>
+<p>之後：
+3. 揸 choke（如冷機）
+4. Open throttle 少少
+5. 拉啟動繩 / 按 starter button</p>
+<p><strong>10. 啟動後即時要 check：</strong> Note: <strong>B.12 考點</strong></p>
+<ul>
+<li>(i) 冷卻水溫度錶：<strong>仍冷</strong>（剛啟動）</li>
+<li>(ii) <strong>潤滑油壓力錶：到設計壓力 (designed pressure)</strong> ← 答案</li>
+<li>(iii) 轉速錶：<strong>idle（怠速）</strong>，唔係 rated speed</li>
+</ul>
+<p><strong>11. 反覆 / 長時間啟動嘅影響：</strong>
+- 起動 motor 過熱 + 損耗
+- 電池過度放電
+- Cylinder 入過多油（柴油未燒）</p>
+<p><strong>12. Warming up + cooling down：</strong></p>
+<ul>
+<li><strong>Warming up</strong>：低 RPM 怠速 5–10 分鐘，待 jacket water 達 ~60°C 才加負荷</li>
+<li>點解？避免 cylinder liner / piston 急速 thermal stress</li>
+<li><strong>Cooling down</strong>：到岸前低 RPM 5 分鐘</li>
+<li>點解？等 turbocharger（如有）冷卻 + 防止熱點 (hot spot)</li>
+</ul>
+<p><strong>13. 停車程序 (Stopping procedures)：</strong> Note: <strong>B.15 考點</strong></p>
+<p><strong>柴油機正常停車 = 切斷燃油供應</strong> (cut off fuel supply)
+- 唔係切空氣（air intake）—— 嗰個係 emergency
+- 唔係切電源 —— 柴油機冇火花塞，切電唔停
+- <strong>B.15 答案 B</strong></p>
+<p><strong>14. 機艙安全程序 (Securing machinery space)：</strong>
+- 關燃油 main valve
+- 關 sea cock（海水入口閥）
+- 切斷 battery main switch（如長期不用）
+- 通風確保無積聚易燃氣體</p>
+<h3 id="_3">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>題目</th>
+<th>答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4-stroke 排氣衝程？</td>
+<td><strong>活塞 ↑ + 排氣門開</strong></td>
+</tr>
+<tr>
+<td>Dry liner 特徵？</td>
+<td><strong>不接觸冷卻水 + 較薄</strong></td>
+</tr>
+<tr>
+<td>4-stroke distributor 速度？</td>
+<td><strong>曲軸 1/2</strong></td>
+</tr>
+<tr>
+<td>Common rail 噴射壓力由邊個調？</td>
+<td><strong>Limiting valve</strong></td>
+</tr>
+<tr>
+<td>啟動小船外機首兩步？</td>
+<td><strong>Lower gearbox 入水 + neutral</strong></td>
+</tr>
+<tr>
+<td>啟動後油壓錶顯示？</td>
+<td><strong>設計壓力</strong></td>
+</tr>
+<tr>
+<td>柴油機正常停車？</td>
+<td><strong>切燃油</strong></td>
+</tr>
+<tr>
+<td>Wet silencer 海水來源？</td>
+<td><strong>引擎海水冷卻系統</strong></td>
+</tr>
+<tr>
+<td>Choke 作用？</td>
+<td>令油氣濃 + 易燃；<strong>唔係 throttle</strong></td>
+</tr>
+<tr>
+<td>紅色柴油點解？</td>
+<td><strong>應課稅品條例規定染色</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_4">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> 啟動汽油機用 throttle 變濃——<strong>對：</strong> 用 <strong>choke</strong></li>
+<li><strong>錯：</strong> 切電源停柴油機——<strong>對：</strong> 切<strong>燃油</strong></li>
+<li><strong>錯：</strong> Wet 同 Dry liner 散熱方式一樣——<strong>對：</strong> Wet 直接接觸水，Dry 經 block 傳</li>
+</ul>
+<hr>
+<h2 id="b16-duties-while-underway">B16 · Duties while underway</h2>
+<h3 id="_5">點解要學</h3>
+<p>航行期間機房監察錯一啲，可能小事變大事故（過熱、油壓低、火警）。</p>
+<h3 id="_6">核心知識</h3>
+<p><strong>1. 監察引擎 7 項指標：</strong> [src_examrules §8.1.B.16.a]</p>
+<table>
+<thead>
+<tr>
+<th>指標</th>
+<th>正常範圍</th>
+<th>偏差含義</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(i) <strong>RPM</strong>（轉速）</td>
+<td>因引擎而異</td>
+<td>過低 = 燃料 / 進氣 / 壓縮問題；過高 = 過載</td>
+</tr>
+<tr>
+<td>(ii) <strong>冷卻水溫度</strong></td>
+<td>80–95°C 一般</td>
+<td>過高 = 冷卻不足；過低 = thermostat 卡 / cylinder 冷腐蝕</td>
+</tr>
+<tr>
+<td>(iii) <strong>冷卻水流量</strong></td>
+<td>視 spec</td>
+<td>流量低 = strainer 塞 / pump fail</td>
+</tr>
+<tr>
+<td>(iv) <strong>潤滑油壓力</strong></td>
+<td>視 spec（一般 3–5 bar）</td>
+<td>過低 = 漏 / pump fail / 油位低</td>
+</tr>
+<tr>
+<td>(v) <strong>潤滑油溫度</strong></td>
+<td>一般 &lt; 90°C</td>
+<td>過高 = 過載 / oil cooler 失效</td>
+</tr>
+<tr>
+<td>(vi) <strong>排氣溫度</strong></td>
+<td>視 cylinder</td>
+<td>各缸不均 = injector 失效</td>
+</tr>
+<tr>
+<td>(vii) <strong>排氣顏色</strong></td>
+<td>淡灰 / 淡藍</td>
+<td>黑 = 燃料過多；白 = 水入；藍 = 燒油</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2. 引擎噪音 / 振動監察：</strong>
+- 異常 knocking = 燃燒 / bearing 問題
+- 持續 vibration 可能 propeller 損 / mounting 鬆</p>
+<p><strong>3. 監察 stern gland + bilge level：</strong></p>
+<p><strong>Stern gland（尾軸密封）：</strong>
+- 容許輕微滴水（1 滴 / 秒）潤滑 packing
+- 過量漏水 = packing 磨損，需 tighten gland nut（但唔可以過緊，會卡住軸）</p>
+<p><strong>Bilge level（艙底水位）：</strong>
+- 定時 check
+- 上升中 → 揾漏點
+- Bilge pump 自動 trigger 嘅 float switch 要定期 test</p>
+<p><strong>4. 機房通風 (Machinery space ventilation)：</strong>
+- 強制 ventilation 確保引擎有足夠進氣
+- 汽油機艙：通風尤其重要（汽油蒸氣易爆）
+- LPG 通風：氣比空氣重，<strong>通風口要喺底部</strong></p>
+<p><strong>5. 機房常見問題：</strong> Note: <strong>B.6 + B.11 考點</strong></p>
+<p><strong>B.6：吸海濾網 (sea suction strainer) 唔潔但引擎溫度正常</strong>？</p>
+<p>可能原因：
+- (i) 溫度錶失靈（實際過熱但顯示正常）
+- (iv) 引擎負載很低（冷卻需求少）</p>
+<p><strong>答 D：(i) + (iv)</strong></p>
+<p><strong>B.11：潤滑油壓力異常低</strong>？</p>
+<p>可能原因：
+- (iv) 油壓錶失靈
+- (v) 油泵嚴重磨損</p>
+<p><strong>答 D：(iv) + (v)</strong></p>
+<p>不會係：
+- (i) 過度冷卻——油黏稠反而壓力升
+- (ii) 油位高——壓力反而升
+- (iii) 輕微磨損——影響不大</p>
+<p><strong>6. 引擎理想工作狀態：</strong> Note: <strong>B.17 考點</strong></p>
+<p>「<strong>船體 + 螺旋槳匹配正確 = full throttle 達到 rated speed + full power</strong>」</p>
+<p>如果 full throttle 達唔到 rated speed → propeller 過重；超過 rated speed → 過輕。</p>
+<h3 id="_7">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>題目</th>
+<th>答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>強海濾網塞但溫度正常？</td>
+<td><strong>錶壞 + 負荷低</strong></td>
+</tr>
+<tr>
+<td>油壓低主因？</td>
+<td><strong>錶壞 + pump 嚴重磨損</strong></td>
+</tr>
+<tr>
+<td>引擎理想狀態？</td>
+<td><strong>Full throttle 達 rated speed + full power</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_8">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> 溫度正常 = 一定冇問題——<strong>對：</strong> 可能錶壞咗</li>
+<li><strong>錯：</strong> Stern gland 完全唔漏先正常——<strong>對：</strong> 容許 1 滴/秒潤滑</li>
+</ul>
+<hr>
+<h2 id="b17-batteries-and-electrical-equipment">B17 · Batteries and electrical equipment</h2>
+<h3 id="_9">點解要學</h3>
+<p>電氣事故可以致命（觸電、火警、爆炸）+ 引擎冇電 = 開唔到。考試會出 4–5 題。</p>
+<h3 id="_10">核心知識</h3>
+<p><strong>1. 電池 (Batteries) — 4 個監察項：</strong> [src_examrules §8.1.B.17.a]</p>
+<p>(i) <strong>充電狀態</strong>：用 hydrometer 量 specific gravity
+- 滿電 ~1.28；放電 ~1.15
+- Voltage：12V 系統 滿電 12.6V，放電到 11.8V 已過低
+(ii) <strong>補充電解液</strong>：用蒸餾水（distilled water）補到 plate 上 1cm
+- Note: <strong>唔可以加酸</strong>
+(iii) <strong>通風</strong>：充電產生氫氣（H₂）—— 易爆，<strong>必須通風</strong>
+(iv) <strong>充電電流</strong>：唔可以過大（會 overheating + 損極板）</p>
+<p><strong>2. 單元電池容量決定因素：</strong> Note: <strong>B.24 考點</strong></p>
+<p><strong>「浸喺電解液裏嘅電池板表面面積」</strong> 決定容量
+- 面積大 = 化學反應多 = 容量 (Ah) 大
+- 不是 voltage（voltage 由 cell 數決定）
+- 不是充電時間（係 input 而非容量）</p>
+<p><strong>3. 電池室安全 — Explosion-proof equipment：</strong> Note: <strong>B.23 考點</strong></p>
+<p>電池充電產生氫氣（爆炸下限 ~4% in air）。</p>
+<p><strong>電池室任何電器（包括通風扇）必須係防爆型 (explosion-proof)</strong>。</p>
+<p>唔可以用：
+- × Drip-proof（防滴水）
+- × Watertight（水密）
+- × Weatherproof（防風雨）</p>
+<p><strong>B.23 答案 D</strong>。</p>
+<p><strong>4. Switchboard + 儀表 (Instrumentation)：</strong>
+- Voltmeter（電壓）
+- Ammeter（電流）
+- Battery condition indicator
+- Bus-bar 連接 main supply 同各 circuit
+- Circuit breaker（斷路器）+ fuse（保險絲）保護</p>
+<p><strong>5. Fuses — 功能、類型、額定值：</strong></p>
+<p><strong>功能</strong>：當電流超過設計值 → 熔斷 → 保護電線同器材</p>
+<p><strong>類型</strong>：
+- Cartridge fuse（管狀）
+- Blade fuse（汽車 / 船多用）
+- HRC（high rupturing capacity）</p>
+<p><strong>額定值</strong>：標明電流（A）+ 電壓（V）+ breaking capacity</p>
+<p>Note: <strong>燒咗 fuse 要換同樣 rating，唔可以用更大 rating（會燒線）</strong></p>
+<p><strong>6. 觸電 (Electric shock) 應變：</strong> Note: <strong>B.27 考點</strong></p>
+<p><strong>首要動作：切斷電源</strong> (break the contact by switch off)</p>
+<p>唔可以：
+- × 直接拉傷者（你會跟住觸電）
+- × 即施 CPR（電流仲喺度）</p>
+<p>確認電源切斷後：
+1. 評估呼吸 + 脈搏
+2. 召喚 medical aid
+3. 必要時 CPR</p>
+<p><strong>7. 接駁岸電 (Shore power) — 首要步驟：</strong> Note: <strong>B.26 考點</strong></p>
+<p><strong>接駁前首要：關閉 (i) 碼頭供電箱主開關 + (ii) 船上配電系統開關</strong></p>
+<p>點解？
+- 避免插拔時電弧 (arcing)
+- 避免短路
+- 避免觸電</p>
+<p>關閉次序：先船上、再碼頭，或者一齊都得。<strong>接駁好喉先重新開電</strong>。</p>
+<h3 id="_11">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>題目</th>
+<th>答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>電池室通風 motor？</td>
+<td><strong>防爆 (explosion-proof)</strong></td>
+</tr>
+<tr>
+<td>單一電池容量決定？</td>
+<td><strong>電池板浸電解液面積</strong></td>
+</tr>
+<tr>
+<td>觸電救援第一步？</td>
+<td><strong>切電源</strong></td>
+</tr>
+<tr>
+<td>接駁岸電前？</td>
+<td><strong>關碼頭 + 船兩邊主 breaker</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_12">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> 防水 motor 可代替防爆——<strong>對：</strong> 必須<strong>防爆</strong></li>
+<li><strong>錯：</strong> 觸電即 CPR——<strong>對：</strong> 先<strong>切電源</strong></li>
+<li><strong>錯：</strong> Voltage 越高 = 容量越大——<strong>對：</strong> Voltage = cell 數；容量 = 板面積</li>
+</ul>
+<hr>
+<h2 id="b18-trouble-shooting-and-remedies-at-sea">B18 · Trouble shooting and remedies at sea</h2>
+<h3 id="_13">點解要學</h3>
+<p>船開出海冇人幫，自己要識診斷 + 暫時修。Part B 故障題佔 10+ 題。</p>
+<h3 id="_14">核心知識</h3>
+<p><strong>12 大常見故障 + 處理：</strong> [src_examrules §8.1.B.18]</p>
+<h4 id="a-difficulty-in-starting">(a) Difficulty in starting（啟動困難）</h4>
+<p>Note: <strong>B.28 考點</strong>：以下邊個<strong>唔係</strong>柴油機啟動困難原因？</p>
+<p>✓ Starter motor 轉得太慢（電池弱）
+<strong>× 曲軸箱潤滑油不足（</strong>啟動唔依賴 crankcase 油<strong>）= 答案 B</strong>
+✓ 空氣濾網阻塞
+✓ 燃油泵入空氣 (air lock)</p>
+<h4 id="b-engine-stops-underway">(b) Engine stops underway（行駛中熄火）</h4>
+<p>可能原因：
+- 燃油用完 / 油喉塞 / 油泵 air lock
+- 過熱保護觸發
+- Governor 失靈</p>
+<h4 id="c-speed-fluctuation">(c) Speed fluctuation（速度波動）</h4>
+<p>可能：
+- 燃油供應不穩
+- Governor 卡</p>
+<h4 id="d-engine-vibration">(d) Engine vibration（振動）</h4>
+<p>可能：
+- 螺旋槳損
+- 排氣失壓
+- Mounting 鬆
+- 噴油器某個失靈（有缸冇噴油）</p>
+<h4 id="e-turbocharger-vibration">(e) Turbocharger vibration</h4>
+<ul>
+<li>Bearing 磨損</li>
+<li>Compressor wheel 損</li>
+</ul>
+<h4 id="f">(f) 異常排氣 — 黑、白、藍煙：</h4>
+<table>
+<thead>
+<tr>
+<th>顏色</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>黑</strong></td>
+<td>燃料過多 / 空氣不足（air filter 塞、turbo 失效）</td>
+</tr>
+<tr>
+<td><strong>白</strong></td>
+<td>水入 cylinder（gasket 漏 / liner crack）/ 太冷（未燒完）</td>
+</tr>
+<tr>
+<td><strong>藍</strong></td>
+<td>燒潤滑油（piston ring 磨損 / valve guide 漏）</td>
+</tr>
+</tbody>
+</table>
+<h4 id="g-high-lube-oil-temp">(g) High lube oil temp</h4>
+<ul>
+<li>Oil cooler 塞</li>
+<li>過載</li>
+<li>油路 restriction</li>
+</ul>
+<h4 id="h-high-coolant-temp-low-flow">(h) High coolant temp / low flow</h4>
+<ul>
+<li>Strainer 塞</li>
+<li>Pump impeller 損</li>
+<li>Thermostat 卡關</li>
+</ul>
+<h4 id="i-high-exhaust-temp">(i) High exhaust temp</h4>
+<ul>
+<li>過載</li>
+<li>噴油時間 (timing) 錯</li>
+<li>Compression loss</li>
+</ul>
+<h4 id="j-gear-engaging-difficulties">(j) Gear engaging difficulties</h4>
+<p>Note: <strong>B.7 考點</strong>：高速時 clutch 打滑可能原因？</p>
+<p>✓ 離合碟磨損 (ii)
+✓ 油壓過低 (iii)
+× 工作溫度太低 (i) — 唔係 slip 主因</p>
+<p><strong>答 D：(ii) + (iii)</strong></p>
+<h4 id="k-engine-fails-to-stop">(k) Engine fails to stop</h4>
+<ul>
+<li>燃油 cut-off 機構卡</li>
+<li>Emergency = <strong>切空氣供應 (stop air intake)</strong></li>
+</ul>
+<h4 id="l-bilge-pumping-efficiency">(l) Bilge pumping efficiency 下降</h4>
+<ul>
+<li>Strainer 塞</li>
+<li>Pump impeller 磨損</li>
+<li>Air leak（吸唔起水）</li>
+</ul>
+<p>Note: <strong>B.22 考點 — Piston pump 圖示</strong></p>
+<p>手動活塞泵：推手柄時 = 壓縮衝程
+- Inlet valves 關閉、outlet valves 打開
+- 答案 B：valves 2, 3 關（具體編號參照官方圖）</p>
+<p><strong>B.10 考點 — 低壓油管入空氣後果：</strong></p>
+<ul>
+<li>(i) 引擎振動（噴油不均）</li>
+<li>(iii) 啟動失敗（油泵打唔上壓）</li>
+<li>唔會 (ii) 噴油系統過熱</li>
+</ul>
+<p><strong>答 D：(i) + (iii)</strong></p>
+<p><strong>B.13 考點 — 液壓舵機 air lock 原因：</strong></p>
+<ul>
+<li>(i) 接頭漏 → 油走 + 空氣入</li>
+<li>(ii) 油量不足 → 系統吸入空氣</li>
+</ul>
+<p><strong>兩個都對，答 C</strong></p>
+<p><strong>B.19 考點 — 油壓警報響：</strong></p>
+<p><strong>首要：將引擎減速 (reduce speed)</strong> — 保護引擎，再判斷情況</p>
+<p>唔好：
+- 立即停機（船會失控漂）
+- 繼續正常運行（會損 bearing）
+- 加油（治標不治本）</p>
+<p><strong>B.21 考點 — 入排氣閥間隙不足：</strong></p>
+<p>→ 閥門關不緊 → 壓縮氣體洩漏 → <strong>失壓縮</strong>（Loss of compression）</p>
+<p>Note: 唔係 noisy tappets —— 嗰個係間隙<strong>過大</strong></p>
+<p><strong>B.29 考點 — 船外汽油機加速失敗：</strong></p>
+<p>→ <strong>化油器噴口 (jet) 有污物</strong> = 油不足 = 加速無力</p>
+<p>其他選項：
+- (A) 油 / 油混合比例 — 影響潤滑非加速
+- (C) 油喉冇 priming — 完全唔啟動
+- (D) 點火系統故障 — 通常完全唔著火</p>
+<p><strong>B.30 考點 — 噴油器漏：</strong></p>
+<p>後果：
+- (i) 馬力下降
+- (ii) 黑煙
+- (iii) 振動
+- (iv) 多耗油</p>
+<p><strong>全部對，答 D</strong></p>
+<p><strong>B.31 考點 — 氣缸過冷 (super-cooled jacket water)：</strong></p>
+<p>→ 燃燒不完全 → <strong>酸性產物凝結 cylinder 壁 → cold corrosion → 磨損</strong></p>
+<p>呢個係<strong>最易磨耗</strong>原因。</p>
+<p><strong>B.32 考點 — 失壓縮原因：</strong></p>
+<p>→ <strong>Exhaust valve 卡開</strong>（Exhaust valve stuck open）= 壓縮氣體從排氣口漏走</p>
+<p>唔係：
+- 燃油等級錯 — 影響燃燒非壓縮
+- Manifold 漏 — 影響進排氣量</p>
+<p><strong>B.33 考點 — 汽油機排氣較乾淨：</strong></p>
+<p>✓ (ii) 易達完全燃燒
+✓ (iii) 汽油碳含量低
+✓ (iv) 汽油易點火
+× (i) 燒少 — 汽油機單位功率燒得多</p>
+<p><strong>答 C：(ii)+(iii)+(iv)</strong></p>
+<p><strong>B.34 考點 — 柴油機氣缸過量潤滑：</strong></p>
+<ul>
+<li>(i) 易結碳（多餘油喺燃燒室燒成積碳）</li>
+<li>(ii) 活塞環卡死（積碳令 piston ring stuck）</li>
+<li>(iii) 增加磨損 — × 過度潤滑反而減磨損</li>
+<li>(iv) 過載 — × 唔關過載事</li>
+</ul>
+<p><strong>答 A：(i)+(ii)</strong></p>
+<p><strong>B.35 考點 — 甲板絞車液壓油位過低：</strong></p>
+<p>→ <strong>隔離絞車 + 檢查油喉漏點</strong></p>
+<p>唔好：
+- 即注油 — 浪費油
+- 排積水 — 油減少 ≠ 入水
+- 釋壓 — 唔關膨脹事</p>
+<h4 id="b16-a13">其他常見：B.16 擱淺處理（見 A.13）</h4>
+<h3 id="_15">考試重點</h3>
+<p>故障題太多，記呢個 mental framework：</p>
+<p><strong>「症狀 → 詢問：燃料？空氣？壓縮？火花？冷卻？潤滑？」</strong></p>
+<table>
+<thead>
+<tr>
+<th>症狀</th>
+<th>最大可能原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>啟動唔到</td>
+<td>Battery / 燃油 air lock / 空氣濾網塞</td>
+</tr>
+<tr>
+<td>加速無力</td>
+<td>Carburettor jet 塞 / 燃料不足</td>
+</tr>
+<tr>
+<td>黑煙</td>
+<td>燃料過多 / 空氣不足</td>
+</tr>
+<tr>
+<td>白煙</td>
+<td>水入 cylinder</td>
+</tr>
+<tr>
+<td>藍煙</td>
+<td>燒潤滑油</td>
+</tr>
+<tr>
+<td>過熱</td>
+<td>Strainer 塞 / pump fail / thermostat 卡</td>
+</tr>
+<tr>
+<td>失壓縮</td>
+<td>Exhaust valve 卡開 / 閥間隙不足</td>
+</tr>
+<tr>
+<td>Cylinder 磨損</td>
+<td>過冷 cold corrosion</td>
+</tr>
+<tr>
+<td>油壓低</td>
+<td>錶壞 / pump 嚴重磨損</td>
+</tr>
+<tr>
+<td>油壓警報</td>
+<td>減速（唔係即停）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_16">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> 油壓警報立即停機——<strong>對：</strong> 先<strong>減速</strong></li>
+<li><strong>錯：</strong> Cylinder 過熱最磨損——<strong>對：</strong> <strong>過冷</strong>最磨損（cold corrosion）</li>
+<li><strong>錯：</strong> 閥間隙過大失壓縮——<strong>對：</strong> 過大係 noisy tappets；<strong>過細</strong>先失壓縮</li>
+</ul>
+<hr>
+<h2 id="b19-maintenance">B19 · Maintenance</h2>
+<h3 id="_17">點解要學</h3>
+<p>定期 maintenance 預防 90% 故障。考試會問 maintenance schedule + 具體項目。</p>
+<h3 id="_18">核心知識</h3>
+<p><strong>1. Maintenance schedule 來源：</strong></p>
+<ul>
+<li>船廠（shipbuilder）maintenance manual</li>
+<li>引擎廠商（engine manufacturer）service manual</li>
+<li>Class society（如 IACS member）規定</li>
+</ul>
+<p><strong>遵循次序：</strong> 廠商建議 &gt; 一般慣例</p>
+<p><strong>2. 定期 maintenance 項目：</strong> [src_examrules §8.1.B.19.b]</p>
+<p>(i) <strong>清潔 / 更換濾網：</strong>
+- Air filter（空氣濾網）— 每 100–250 hr 或視塞咗
+- Fuel filter（燃油濾網）— 每 250–500 hr
+- Lube oil filter（油濾網）— 每換油時更換
+- <strong>Sea suction strainer</strong>（海水入口濾網）— 定期檢查清</p>
+<p>(ii) <strong>更換潤滑油：</strong>
+- Engine oil 每 100–250 hr 或每年
+- Gearbox oil 每 250–500 hr
+- 用適當 SAE viscosity（一般 SAE 30 / 40 marine grade）</p>
+<p>(iii) <strong>冷卻 + 排氣系統：</strong>
+- Heat exchanger 每年清
+- 排氣管 + silencer check 漏
+- Sea cock 試開閉</p>
+<p>(iv) <strong>Belt drives：</strong>
+- Check tension（按下 1cm 為適）
+- Check 磨損 / 裂紋
+- 備 spare belt</p>
+<p><strong>3. 額外 maintenance：</strong></p>
+<ul>
+<li>Anti-fouling paint 每年 / 兩年</li>
+<li>Sacrificial anode（犠牲陽極）每年 check，腐蝕 50% 換新</li>
+<li>Steering linkage greasing</li>
+<li>Battery terminal 清理 + grease</li>
+</ul>
+<p><strong>4. Maintenance log：</strong>
+- 記錄每次 service 日期 + 項目 + 工時
+- 後續分析 trend</p>
+<p><strong>5. 季前 / 季後 maintenance：</strong></p>
+<p>季前（春初）：
+- Engine 大 service
+- 試啟動
+- 試所有電子設備
+- 檢 LSA / FFA 過期</p>
+<p>季後（冬季 lay-up）：
+- 排空冷卻系統 / 加 antifreeze
+- 燃油加 stabilizer
+- 拆 battery 充電 store
+- 升 dry storage（如可）</p>
+<h3 id="_19">考試重點</h3>
+<p>冇單一明確 maintenance 數字考點，但題目可能問：
+- Maintenance manual 邊個寫？ → <strong>shipbuilder + engine manufacturer</strong>
+- 定期清咩濾網？ → <strong>air, fuel, lube oil, sea suction</strong></p>
+<h3 id="_20">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> 引擎未壞唔使 service——<strong>對：</strong> Preventive maintenance 預防大壞</li>
+<li><strong>錯：</strong> 機油黑咗即換——<strong>對：</strong> 視乎 hours / 公里非顏色</li>
+</ul>
+<hr>
+<h2 id="b20-safe-operation-of-deck-equipment">B20 · Safe operation of deck equipment</h2>
+<h3 id="_21">點解要學</h3>
+<p>甲板裝備（絞車、錨機、舵、纜繩等）操作不當會傷人或令船失控。</p>
+<h3 id="_22">核心知識</h3>
+<p><strong>1. Anchor windlass（錨機）：</strong></p>
+<ul>
+<li>操作前 check：絞鼓潤滑、stopper（防滑）、清潔</li>
+<li>落錨：慢慢放，避免 free fall（會傷人 + 損鏈）</li>
+<li>收錨：頂流 / 頂風慢慢上，避免 pull 太用力</li>
+<li>緊急鬆開：用 stopper 或 brake</li>
+</ul>
+<p><strong>2. Mooring winch（繫纜絞車）：</strong>
+- 揾啱 fairlead + bollard 角度
+- 纜繩磨損 = stand clear
+- Snap-back zone（如纜繩斷裂彈出範圍）—— 唔好企
+- Note: <strong>Whip lash injury</strong> 致命</p>
+<p><strong>3. Steering gear（舵機）：</strong></p>
+<p>機械式：
+- 鏈條 / cable / 齒輪
+- 定期 grease</p>
+<p>液壓式：
+- 油壓 reservoir 油位
+- 防 air lock（B.13）
+- 過熱保護</p>
+<p>電動式：
+- 防水 motor</p>
+<p><strong>4. Hydraulic deck winch（液壓絞車）：</strong> Note: <strong>B.35 考點（已喺 B18 提及）</strong></p>
+<p>油位過低 = <strong>隔離 + 檢漏</strong>，唔好即注油</p>
+<p><strong>5. Davits / cranes：</strong>
+- 按 SWL（Safe Working Load）操作
+- 定期 check 鋼纜</p>
+<p><strong>6. 安全操作原則：</strong>
+- 絕對唔可以 stand under load
+- 緊急 stop button 易取
+- 操作員專心，唔分心 chat</p>
+<h3 id="_23">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>題目</th>
+<th>答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>液壓絞車油位低？</td>
+<td><strong>隔離 + 檢查漏點</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_24">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> 直接添油完事——<strong>對：</strong> 揾漏點先</li>
+</ul>
+<hr>
+<h2 id="b21-fire-fighting-and-fire-prevention">B21 · Fire fighting and fire prevention</h2>
+<h3 id="_25">點解要學</h3>
+<p>火警喺船上是最致命災難之一。考試會出 4–5 題涵蓋火災理論、滅火器類型、燃料安全、LPG。</p>
+<h3 id="_26">核心知識</h3>
+<p><strong>1. Fire Triangle（火災三角）：</strong> Note: <strong>B.36 考點</strong></p>
+<pre><code>    燃料 (Fuel)
+       /\
+      /  \
+     /____\
+燃燒溫度    空氣
+(Heat)     (Oxygen)
+</code></pre>
+<p><strong>3 元素缺一不可。</strong> 滅火 = 移除任何一邊。</p>
+<p><strong>B.36 答案 D：(i) + (ii) + (iii) 全部</strong> = 燃料 + 空氣 + 燃燒溫度</p>
+<p><strong>2. 燃料火災危險：</strong></p>
+<p>(a) <strong>汽油 (Petrol)：</strong> [src_examrules §8.1.B.21.a]
+- 揮發性極高，比空氣重，沉到艙底
+- Flash point &lt; 0°C — 室溫已易燃
+- 4-min ventilation rule of thumb（<strong>唔係 PVOC 官方規則</strong>，但係國際 best practice）：開引擎前通風 4 分鐘</p>
+<p>(b) <strong>柴油 (Diesel)：</strong>
+- Flash point ~60°C，較安全
+- 但仍可起火，霧化（spray）情況下尤其危險</p>
+<p>(c) <strong>LPG（液化石油氣）：</strong>
+- 比空氣<strong>重</strong> → 沉低處 → <strong>通風口要喺底部</strong></p>
+<p><strong>3. 火災分類 + 適當滅火劑：</strong> Note: <strong>A.35 / B.37 考點</strong></p>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>燃料</th>
+<th>適當滅火</th>
+<th><strong>唔適當</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong></td>
+<td>木、紙、布</td>
+<td>水、泡沫、乾粉</td>
+<td>CO₂（無冷卻）</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>油、汽油、柴油、grease</td>
+<td><strong>泡沫</strong>、乾粉、CO₂</td>
+<td><strong>水</strong>（油浮）</td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td>氣體（LPG）</td>
+<td>乾粉、cut off supply</td>
+<td>水</td>
+</tr>
+<tr>
+<td><strong>D</strong></td>
+<td>金屬</td>
+<td>特殊 dry powder</td>
+<td>水</td>
+</tr>
+<tr>
+<td><strong>E</strong> (電氣)</td>
+<td>帶電器材</td>
+<td><strong>CO₂</strong>、乾粉</td>
+<td><strong>水、泡沫</strong>（導電）</td>
+</tr>
+<tr>
+<td><strong>F</strong></td>
+<td>食油</td>
+<td>Wet chemical</td>
+<td>水</td>
+</tr>
+</tbody>
+</table>
+<p>Note: <strong>A.35 考點</strong>：電氣火警 = <strong>CO₂</strong> 最佳（不導電、無殘留、唔損電子）</p>
+<p>Note: <strong>B.37 考點</strong>：<strong>唔適合電氣火 = 泡沫（含水導電）</strong></p>
+<p><strong>4. 攜帶式滅火器類型 + 操作 (PASS)：</strong></p>
+<p><strong>操作 PASS 口訣：</strong>
+- <strong>P</strong>ull pin（拔保險銷）
+- <strong>A</strong>im at base of fire（瞄火源底）
+- <strong>S</strong>queeze handle（壓 trigger）
+- <strong>S</strong>weep side to side（左右掃）</p>
+<p><strong>類型：</strong></p>
+<table>
+<thead>
+<tr>
+<th>類型</th>
+<th>內含</th>
+<th>用</th>
+<th>不用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Water</td>
+<td>水</td>
+<td>A</td>
+<td>油 / 電氣</td>
+</tr>
+<tr>
+<td>Foam</td>
+<td>泡沫</td>
+<td>A, B</td>
+<td>電氣</td>
+</tr>
+<tr>
+<td><strong>CO₂</strong></td>
+<td>二氧化碳</td>
+<td><strong>B, E</strong></td>
+<td>A（無冷卻效果）</td>
+</tr>
+<tr>
+<td><strong>Dry powder</strong></td>
+<td>乾粉</td>
+<td><strong>A, B, C, E</strong></td>
+<td>食油</td>
+</tr>
+<tr>
+<td>Wet chemical</td>
+<td>化學液</td>
+<td>F</td>
+<td>電氣</td>
+</tr>
+</tbody>
+</table>
+<p><strong>5. 維護 (Maintenance)：</strong>
+- 壓力錶綠色區
+- 每年由 authorized service agent 檢
+- 操作後即重 fill / 換</p>
+<p><strong>6. 實戰滅火技巧：</strong>
+- 站上風（避免吸入濃煙）
+- 接近時保持低姿勢（熱氣浮高）
+- 設預定逃生路線
+- 隊友支援
+- 滅後監察 re-ignition</p>
+<p><strong>7. LPG 安裝同危險：</strong> Note: <strong>B.39 考點</strong></p>
+<p><strong>規則：</strong>
+1. ✓ 氣樽放陽光不直射處（避免溫升爆胎）
+2. × <strong>石油氣管「最短為原則」係錯！</strong> 應有適當長度（避免拉緊或受損）← B.39 答案 B
+3. ✓ 櫃內氣樽：櫃底必須有透氣管（LPG 比空氣重，沉底）
+4. ✓ 氣樽存於甲板上</p>
+<p><strong>LPG 漏氣處理：</strong>
+- 立即關主閥
+- 唔可以開電 / 火 / 火花
+- 通風（強制 fan）
+- 用 soap-water 揾漏點</p>
+<p><strong>8. 安全燃油儲存 + 火警時隔離供應：</strong>
+- 油缸有 emergency shut-off valve
+- 甲板有 main fuel cock
+- 火警 = 即關 fuel supply</p>
+<p><strong>9. 燃油洩漏處理：</strong>
+- 即關 fuel valve
+- 用吸油布 / sand 吸
+- 通風
+- 唔可以用水沖（油浮會擴散）
+- 通報海事處（屬污染）</p>
+<p><strong>10. 加油 (Refuelling) 注意：</strong></p>
+<ul>
+<li>引擎熄火</li>
+<li>乘客落船</li>
+<li>唔吸煙、唔開電</li>
+<li>加油後通風 4 分鐘（rule of thumb）才開引擎</li>
+<li>加完 check 漏</li>
+</ul>
+<p><strong>11. 機房防火措施：</strong> Note: <strong>B.38 考點</strong></p>
+<p>包括：
+- 定期檢查沙箱、滅火器
+- 定期消防演習
+- 定期操練 emergency fire pump</p>
+<p>Note: <strong>唔包括</strong>：發電機防過載——係維護事項而非防火措施。</p>
+<p><strong>B.38 答案 B</strong></p>
+<p><strong>12. 排氣管隔熱：</strong> Note: <strong>B.20 考點</strong></p>
+<p>四大功能：
+- (i) 減熱輻射
+- (ii) 降低機房溫度
+- (iii) 防油類接觸引致火災
+- (iv) 保護工人避免燒傷</p>
+<p><strong>全部都係，答 D</strong></p>
+<h3 id="_27">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>題目</th>
+<th>答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>電氣火警最佳滅火？</td>
+<td><strong>CO₂</strong></td>
+</tr>
+<tr>
+<td>唔適合電氣火？</td>
+<td><strong>泡沫</strong>（含水導電）</td>
+</tr>
+<tr>
+<td>火災三要素？</td>
+<td><strong>燃料 + 空氣 + 熱</strong></td>
+</tr>
+<tr>
+<td>LPG 管長度原則？</td>
+<td><strong>適當長度，唔係最短</strong></td>
+</tr>
+<tr>
+<td>機房防火唔包？</td>
+<td><strong>發電機防過載</strong>（屬維護）</td>
+</tr>
+<tr>
+<td>排氣管隔熱功能？</td>
+<td><strong>4 個全部</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_28">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> 水可以救油火——<strong>對：</strong> 油浮喺水面會擴散</li>
+<li><strong>錯：</strong> LPG 通風口喺頂——<strong>對：</strong> <strong>底部</strong>（LPG 重）</li>
+<li><strong>錯：</strong> 4-min vent 係 PVOC 官方規則——<strong>對：</strong> International rule of thumb</li>
+</ul>
+<hr>
+<h2 id="part-b">Part B 結語</h2>
+<p>呢 7 個 topics 覆蓋官方 syllabus 全部要求。</p>
+<h3 id="_29">考前重溫策略</h3>
+<ol>
+<li><strong>B15 + B18</strong>（佔最多題）：背熟 4-stroke 循環、cylinder liner、common rail、故障診斷 framework</li>
+<li><strong>B21 火警</strong>：背熟火災分類 + 適當滅火劑配對 + LPG 規則</li>
+<li><strong>B17 電氣</strong>：防爆、容量、岸電接駁、觸電救援</li>
+<li><strong>B16 監察</strong>：監察 7 項指標 + 油壓 / 水溫 / 排氣顏色 含義</li>
+</ol>
+<h3 id="mental-framework">故障診斷 mental framework</h3>
+<pre><code>症狀 → 問四件事：
+1. 燃料 OK？（油位、油喉、噴油器、carburettor jet）
+2. 空氣 OK？（air filter、turbo）
+3. 壓縮 OK？（valve、ring、liner）
+4. 火花 OK？（汽油機 only：火花塞、distributor）
++ 冷卻 OK？（strainer、pump、thermostat）
++ 潤滑 OK？（油位、pump、filter）
+</code></pre>
+<h3 id="_30">各種「首要動作」記憶</h3>
+<table>
+<thead>
+<tr>
+<th>情況</th>
+<th>首要動作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>油壓警報</td>
+<td><strong>減速</strong>（非停機）</td>
+</tr>
+<tr>
+<td>觸電</td>
+<td><strong>切電源</strong>（非 CPR）</td>
+</tr>
+<tr>
+<td>接駁岸電</td>
+<td><strong>關碼頭 + 船兩邊主 breaker</strong></td>
+</tr>
+<tr>
+<td>液壓油低</td>
+<td><strong>隔離 + 檢漏</strong>（非加油）</td>
+</tr>
+<tr>
+<td>失舵淺水</td>
+<td><strong>下錨</strong>（非加速）</td>
+</tr>
+</tbody>
+</table>
+<p>考試 45 分鐘 40 題，平均 67 秒。<strong>唔識嘅圖示題 (B.1, B.22) 估後即下一題，唔好停</strong>。</p></article>
+
+  </main>
+  <footer class="site-footer">
+    <p>Staging — non-official. Verify on <a href="https://www.mardep.gov.hk/" rel="noreferrer">mardep.gov.hk</a> before booking exam. <a href="about.html">Known limitations</a></p>
+  </footer>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

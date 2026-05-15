@@ -1,0 +1,22 @@
+# Image Credits
+
+## Official Exam/Reference Diagrams
+
+- `imgQA19.png` / `imgQA19.webp` — extracted from Hong Kong Marine Department `PVOC_exam_A_c.pdf`, page 6, image object `Image59`. Source: <https://www.mardep.gov.hk/filemanager/tc/share/pub-services/pdf/PVOC_exam_A_c.pdf>. License/rights: official public document; used here as factual exam-reference material in a non-official staging study site.
+- `imgQA20.png` / `imgQA20.webp` — extracted from Hong Kong Marine Department `PVOC_exam_A_c.pdf`, page 7, image object `Image63`. Source: <https://www.mardep.gov.hk/filemanager/tc/share/pub-services/pdf/PVOC_exam_A_c.pdf>. License/rights: official public document; used here as factual exam-reference material in a non-official staging study site.
+- `imgQA22.png` / `imgQA22.webp` — rendered from Hong Kong Marine Department official HKIAAA map PDF. Source: <https://www.mardep.gov.hk/filemanager/en/share/publications/pdf/materials/iaaa.pdf>. Note: the mock-exam page for A.22 did not contain an embedded image object, so this is the official reference map cited by the handoff data.
+- `imgQA27.png` / `imgQA27.webp` — extracted from Hong Kong Marine Department `PVOC_exam_A_c.pdf`, page 9, image object `Image85`. Source: <https://www.mardep.gov.hk/filemanager/tc/share/pub-services/pdf/PVOC_exam_A_c.pdf>. License/rights: official public document; used here as factual exam-reference material in a non-official staging study site.
+- `imgQB1.png` / `imgQB1.webp` — extracted from Hong Kong Marine Department `PVOC_exam_B_c.pdf`, page 2, image object `Im0`. Source: <https://www.mardep.gov.hk/filemanager/tc/share/pub-services/pdf/PVOC_exam_B_c.pdf>. License/rights: official public document; used here as factual exam-reference material in a non-official staging study site.
+- `imgQB22.png` / `imgQB22.webp` — extracted from Hong Kong Marine Department `PVOC_exam_B_c.pdf`, page 7, image object `Im0`. Source: <https://www.mardep.gov.hk/filemanager/tc/share/pub-services/pdf/PVOC_exam_B_c.pdf>. License/rights: official public document; used here as factual exam-reference material in a non-official staging study site.
+
+## Story Hero Images
+
+- `story_titanic.png` / `story_titanic.webp` — `RMS Titanic 3.jpg`, Francis Godolphin Osbourne Stuart, Wikimedia Commons, Public Domain. Source: <https://commons.wikimedia.org/wiki/File:RMS_Titanic_3.jpg>.
+- `story_andrea_doria.png` / `story_andrea_doria.webp` — `Andrea Doria USCG 1.jpg`, United States Coast Guard, Wikimedia Commons, Public Domain. Source: <https://commons.wikimedia.org/wiki/File:Andrea_Doria_USCG_1.jpg>.
+- `story_diesel.png` / `story_diesel.webp` — `Rudolf Diesel (cropped).jpg`, unknown photographer, Wikimedia Commons, Public Domain. Source: <https://commons.wikimedia.org/wiki/File:Rudolf_Diesel_(cropped).jpg>.
+- `story_hk_waters.png` / `story_hk_waters.webp` — `Hong Kong 1930s 06.jpg`, unknown photographer/private collection, Wikimedia Commons, Public Domain. Source: <https://commons.wikimedia.org/wiki/File:Hong_Kong_1930s_06.jpg>.
+- `story_fire.png` / `story_fire.webp` — `USS Rupertus (DD-851) stands by to assist the burning USS Forrestal (CVA-59), 29 July 1967 (USN 1124775).jpg`, U.S. Navy, Wikimedia Commons, Public Domain. Source: <https://commons.wikimedia.org/wiki/File:USS_Rupertus_(DD-851)_stands_by_to_assist_the_burning_USS_Forrestal_(CVA-59),_29_July_1967_(USN_1124775).jpg>.
+- `story_hindenburg.png` / `story_hindenburg.webp` — `NH 57973 Airship HINDENBURG Disaster, 6 May 1937.png`, U.S. Navy/Naval History and Heritage Command, Wikimedia Commons, Public Domain. Source: <https://commons.wikimedia.org/wiki/File:NH_57973_Airship_HINDENBURG_Disaster,_6_May_1937.png>.
+- `story_republic.png` / `story_republic.webp` — `RMS Republic sinking.jpg`, U.S. Coast Guard, Wikimedia Commons, Public Domain. Source: <https://commons.wikimedia.org/wiki/File:RMS_Republic_sinking.jpg>.
+- `story_cook_chart.png` / `story_cook_chart.webp` — `Chart of Tolaga Bay New Zealand (by Captain James Cook, 1773).jpg`, Alexander Turnbull Library via Wikimedia Commons, Public Domain. Source: <https://commons.wikimedia.org/wiki/File:Chart_of_Tolaga_Bay_New_Zealand_(by_Captain_James_Cook,_1773).jpg>.
+- `story_endurance.png` / `story_endurance.webp` — `Endurance night 1915 SLNSW.jpg`, Frank Hurley / State Library of New South Wales via Wikimedia Commons, Public Domain/no known restrictions. Source: <https://commons.wikimedia.org/wiki/File:Endurance_night_1915_SLNSW.jpg>.

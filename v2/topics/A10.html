@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FBFBFA">
+  <title>A10 · PVOC2 學習</title>
+  <link rel="manifest" href="../manifest.json">
+  <link rel="icon" href="../assets/icons/pvoc2-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="exam-mode topic-page">
+  <header class="topbar">
+    <a class="brand" href="../index.html" aria-label="PVOC2 首頁"><span class="brand-mark">PV</span><span>PVOC2 學習</span></a>
+    <div class="mode-switch" role="group" aria-label="模式切換">
+      <a class="mode-pill " href="../index.html">Story Mode</a>
+      <a class="mode-pill active" href="../exam.html">Exam Mode</a>
+    </div>
+    <button class="icon-btn" type="button" data-theme-toggle aria-label="切換深淺色"></button>
+  </header>
+  <nav class="scroll-nav" aria-label="主要導覽"><a class="nav-link" href="../index.html">故事</a><a class="nav-link" href="../exam.html">考試流程</a><a class="nav-link" href="../parta.html">Part A</a><a class="nav-link" href="../partb.html">Part B</a><a class="nav-link" href="../questions.html">題庫</a><a class="nav-link" href="../mock.html">Mock</a><a class="nav-link" href="../wrongbook.html">錯題本</a><a class="nav-link" href="../cheatsheet.html">小抄</a><a class="nav-link" href="../faq.html">FAQ</a><a class="nav-link" href="../sources.html">Sources</a></nav>
+  <main>
+    
+<section class="page-head compact">
+  <p class="eyebrow">Topic A10</p>
+  <h1>A10 · Use of VHF</h1>
+  <p>1 題題庫 tagged 到呢個 topic。</p>
+</section>
+<section class="story-hook">
+  <img loading="lazy" decoding="async" src="../assets/img/story_republic.webp" alt="">
+  <div><p class="eyebrow">Story Hook</p><h2>Chapter 7: 大霧裡嘅 CQD</h2><p>1909 年 1 月 23 號，White Star liner RMS Republic 喺美國東北對出大霧中，同意大利船 SS Florida 相撞。根據公開資料：Republic 受重創，無線電操作員 Jack Binns 維修受損設備，用電池供電發出 CQD distress call；Na…</p><a class="btn ghost" href="../stories/ch07_republic_fog_sos.html">讀完整故事</a></div>
+</section>
+<section class="learn-callout"><h2>由故事學知識</h2><p>先用故事建立記憶錨，再用下面原文內容逐點補齊考試語言。</p></section>
+<section class="plain-toggle-row"><button class="btn ghost" data-toggle-target="#plain-content">Plain mode toggle</button></section>
+<article id="plain-content" class="md-content topic-doc"><h2 id="a10-use-of-vhf">A10 · Use of VHF</h2>
+<h3 id="_1">點解要學</h3>
+<p>VHF 係海上溝通命脈。考試一定會問 channel 用途同遇險程序。</p>
+<h3 id="_2">核心知識</h3>
+<p><strong>1. VHF radiotelephone procedure：</strong></p>
+<p>接收：
+- 全程開機，monitor Channel 16
+- 聽到 own callsign 即接</p>
+<p>發送：
+- Press-to-talk (PTT) 後等 1 秒先講（避免 cut head）
+- 講嘅次序：對方 callsign → 自己 callsign → message → "OVER"
+- 話完成 = "OUT"</p>
+<p><strong>2. 香港 VHF 頻道體系：</strong> [src_vts_vscp]</p>
+<p>Note: <strong>絕對唔好簡化「CH 67 = 香港通用 incident channel」</strong>——香港有 5 個 sectors</p>
+<table>
+<thead>
+<tr>
+<th>Channel</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CH 02</strong></td>
+<td>Harbour East sector</td>
+</tr>
+<tr>
+<td><strong>CH 12</strong></td>
+<td>Eastern Approaches sector</td>
+</tr>
+<tr>
+<td><strong>CH 14</strong></td>
+<td>Harbour sector</td>
+</tr>
+<tr>
+<td><strong>CH 63</strong></td>
+<td>Lantau South sector</td>
+</tr>
+<tr>
+<td><strong>CH 67</strong></td>
+<td>Western Approaches sector</td>
+</tr>
+<tr>
+<td>CH 16</td>
+<td><strong>國際遇險、安全、呼叫頻道</strong></td>
+</tr>
+<tr>
+<td>CH 20</td>
+<td>Marine Department safety broadcasts（廣播）</td>
+</tr>
+<tr>
+<td>CH 74</td>
+<td>Kwai Chung Control Station (KCCS)——<strong>唔係 VTC sector</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>A.20 考點</strong>：題目顯示某地圖區域 → 答對應 sector 嘅 channel。如圖示為香港西邊水域（屯門、大嶼山西、大澳）→ Western Approaches sector → <strong>CH 67</strong>。但呢個係<strong>因區而異</strong>，唔係話 CH 67 係全港通用。</p>
+<p><strong>3. Distress 程序：</strong></p>
+<p>呼叫格式（VHF Channel 16）：</p>
+<pre><code>MAYDAY MAYDAY MAYDAY
+This is [vessel name] [vessel name] [vessel name]
+MAYDAY [vessel name]
+Position: [latitude/longitude OR bearing/distance from landmark]
+Nature of distress: [fire/sinking/MOB/grounding etc.]
+Number of persons on board: [N]
+Assistance required: [tow/rescue/medical etc.]
+OVER
+</code></pre>
+<p>非 distress 但需要援助 = <strong>PAN-PAN PAN-PAN PAN-PAN</strong>（緊急但非生命威脅）</p>
+<p>醫療緊急 = <strong>MEDICO</strong>（routine medical advice）</p>
+<p><strong>4. A.20 細節：嚴重受傷報告：</strong></p>
+<p>題目：圖示某區域 (Western Approaches)，船上嚴重受傷。<strong>用 CH 67</strong> 通報 VTC（屬該 sector 嘅頻道）。但若不知 sector，<strong>CH 16 係 fallback</strong>。</p>
+<p><strong>5. A.21 細節：違規舉報：</strong></p>
+<p>發現他船喺 speed-restricted zone 超速 → <strong>致電 Harbour Patrol Section（手機）</strong>，唔係 VTC。VTC 處理 navigational safety；Harbour Patrol 處理 enforcement。</p>
+<p><strong>6. A.9 細節：海事處船特殊聲號：</strong></p>
+<p>聽到海事處船發出<strong>一短一長兩短</strong>（汽笛）= 命令你立即停船。</p>
+<h3 id="_3">考試重點</h3>
+<table>
+<thead>
+<tr>
+<th>題目</th>
+<th>答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>西區水域嚴重受傷用邊個 channel？</td>
+<td><strong>CH 67</strong>（Western Approaches sector）</td>
+</tr>
+<tr>
+<td>國際遇險頻道？</td>
+<td><strong>CH 16</strong></td>
+</tr>
+<tr>
+<td>Speed zone 超速舉報？</td>
+<td><strong>Harbour Patrol Section</strong>（手機）</td>
+</tr>
+<tr>
+<td>海事處船一短一長兩短？</td>
+<td><strong>立即停船</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_4">易錯陷阱</h3>
+<ul>
+<li><strong>錯：</strong> CH 67 全港通用——<strong>對：</strong> CH 67 只係 Western Approaches sector</li>
+<li><strong>錯：</strong> 超速舉報用 VHF——<strong>對：</strong> Harbour Patrol Section 手機</li>
+</ul>
+<hr></article>
+<section class="quiz-panel" data-topic-quiz="A10">
+  <div class="section-head"><p class="eyebrow">Mini Quiz</p><h2>A10 快測</h2></div>
+  <div class="quiz-root"></div>
+</section>
+
+  </main>
+  <footer class="site-footer">
+    <p>Staging — non-official. Verify on <a href="https://www.mardep.gov.hk/" rel="noreferrer">mardep.gov.hk</a> before booking exam. <a href="../about.html">Known limitations</a></p>
+  </footer>
+  <script type="module" src="../assets/js/app.js"></script>
+</body>
+</html>

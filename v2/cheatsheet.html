@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FBFBFA">
+  <title>Cheatsheet · PVOC2 學習</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icons/pvoc2-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="exam-mode ">
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="PVOC2 首頁"><span class="brand-mark">PV</span><span>PVOC2 學習</span></a>
+    <div class="mode-switch" role="group" aria-label="模式切換">
+      <a class="mode-pill " href="index.html">Story Mode</a>
+      <a class="mode-pill active" href="exam.html">Exam Mode</a>
+    </div>
+    <button class="icon-btn" type="button" data-theme-toggle aria-label="切換深淺色"></button>
+  </header>
+  <nav class="scroll-nav" aria-label="主要導覽"><a class="nav-link" href="index.html">故事</a><a class="nav-link" href="exam.html">考試流程</a><a class="nav-link" href="parta.html">Part A</a><a class="nav-link" href="partb.html">Part B</a><a class="nav-link" href="questions.html">題庫</a><a class="nav-link" href="mock.html">Mock</a><a class="nav-link" href="wrongbook.html">錯題本</a><a class="nav-link" href="cheatsheet.html">小抄</a><a class="nav-link" href="faq.html">FAQ</a><a class="nav-link" href="sources.html">Sources</a></nav>
+  <main>
+    
+<section class="page-head compact"><p class="eyebrow">Cheatsheet</p><h1>考前小抄</h1><button class="btn ghost" onclick="window.print()">列印</button></section>
+<article class="md-content cheatsheet-doc"><h1 id="pvoc2-cheatsheet">PVOC2 考前小抄（Cheatsheet）</h1>
+<blockquote>
+<p><strong>用法：</strong> 考前一晚瀏覽 30 分鐘；考試早上唔好再睇新嘢，呢張紙打印出嚟帶住（如允許）或者深印腦。</p>
+<p><strong>格式：</strong> 7 張表，密度極高、最少廢話。每個 fact 經 ChatGPT 5 輪審核。</p>
+</blockquote>
+<hr>
+<h2 id="1-colregs-lights-day-shapes">表 1 — COLREGS 燈號 + 號型 (Lights &amp; Day Shapes)</h2>
+<h3 id="power-driven-vessel-underway">機動船 (Power-driven vessel) underway</h3>
+<table>
+<thead>
+<tr>
+<th>設備</th>
+<th>顏色</th>
+<th>視角</th>
+<th>位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mast head light</td>
+<td>白</td>
+<td>225° (前 + 兩舷各 22.5° 後)</td>
+<td>前桅</td>
+</tr>
+<tr>
+<td>Side lights</td>
+<td>右綠 / 左紅</td>
+<td>各 112.5° (前 + 同舷 22.5° 後)</td>
+<td>兩舷</td>
+</tr>
+<tr>
+<td>Stern light</td>
+<td>白</td>
+<td>135° (正後方)</td>
+<td>船尾</td>
+</tr>
+<tr>
+<td>≥50m 加 second mast head</td>
+<td>白，較高且後</td>
+<td>同 mast head</td>
+<td>後桅</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sailing-underway">帆船 (Sailing) underway</h3>
+<ul>
+<li>Side + stern lights only（<strong>冇 mast head light</strong>）</li>
+<li>≤12m 可用單一三色燈喺 mast top</li>
+<li>可選擇加：紅在上 + 綠在下（all-round）喺 mast top</li>
+</ul>
+<h3 id="special-vessels">各種特殊船 (special vessels)</h3>
+<table>
+<thead>
+<tr>
+<th>船種</th>
+<th>燈號（夜）</th>
+<th>號型（日）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Anchored ≤50m</strong></td>
+<td>1 個白 all-round forward</td>
+<td>1 個黑球 forward</td>
+</tr>
+<tr>
+<td><strong>Anchored ≥50m</strong></td>
+<td>Forward 白 + aft 較低白 all-round</td>
+<td>1 個黑球 forward</td>
+</tr>
+<tr>
+<td><strong>Aground (擱淺)</strong></td>
+<td>錨燈 + 2 紅 all-round 垂直</td>
+<td><strong>3 個黑球垂直</strong></td>
+</tr>
+<tr>
+<td><strong>NUC (失控)</strong></td>
+<td>2 紅 all-round 垂直</td>
+<td><strong>2 個黑球垂直</strong></td>
+</tr>
+<tr>
+<td><strong>RAM (操縱受限)</strong></td>
+<td><strong>紅-白-紅</strong> all-round 垂直</td>
+<td><strong>球-菱-球垂直</strong></td>
+</tr>
+<tr>
+<td><strong>CBD (吃水受限)</strong></td>
+<td>機動船燈 + 3 紅 all-round 垂直</td>
+<td>1 個圓柱 (cylinder)</td>
+</tr>
+<tr>
+<td><strong>Trawling (拖網)</strong></td>
+<td>綠 over 白 all-round</td>
+<td>2 錐尖對尖</td>
+</tr>
+<tr>
+<td><strong>Other fishing</strong></td>
+<td>紅 over 白 all-round</td>
+<td>2 錐尖對尖</td>
+</tr>
+<tr>
+<td><strong>Pilot vessel</strong></td>
+<td>白 over 紅 all-round</td>
+<td>冇特定</td>
+</tr>
+<tr>
+<td><strong>Towing ≤200m</strong></td>
+<td>機動船燈 + 2 白 mast head 垂直 + yellow towing aft</td>
+<td>（拖長 &gt;200m 才有菱形）</td>
+</tr>
+<tr>
+<td><strong>Towing &gt;200m</strong></td>
+<td>3 白 mast head 垂直 + yellow towing</td>
+<td>兩船都係菱形</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_1">易混淆</h3>
+<table>
+<thead>
+<tr>
+<th>號型</th>
+<th>意義</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>3 黑球垂直</strong></td>
+<td><strong>擱淺 (Aground)</strong> — 唔係 distress！</td>
+</tr>
+<tr>
+<td><strong>2 黑球垂直</strong></td>
+<td><strong>NUC</strong></td>
+</tr>
+<tr>
+<td><strong>球-菱-球</strong></td>
+<td><strong>RAM</strong></td>
+</tr>
+<tr>
+<td><strong>方旗加球（垂直）</strong></td>
+<td><strong>遇險信號 §1(g)</strong> ← A.19 推斷答案</td>
+</tr>
+</tbody>
+</table>
+<h3 id="12-m-colregs-rule-27g">12 m 以下豁免（COLREGS Rule 27(g)）</h3>
+<p>12m 以下小船<strong>無須</strong>顯示 NUC / RAM 燈號或號型（diving operations 例外）</p>
+<hr>
+<h2 id="2-sound-signals">表 2 — 聲號 (Sound Signals)</h2>
+<p><strong>短聲 = 1 秒；長聲 = 4–6 秒</strong></p>
+<h3 id="manoeuvring-warning-ok-rule-34">Manoeuvring &amp; warning（能見度 OK）— Rule 34</h3>
+<table>
+<thead>
+<tr>
+<th>信號</th>
+<th>意義</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 短</strong></td>
+<td>"I am altering course to <strong>starboard</strong>"</td>
+</tr>
+<tr>
+<td><strong>2 短</strong></td>
+<td>"I am altering course to <strong>port</strong>"</td>
+</tr>
+<tr>
+<td><strong>3 短</strong></td>
+<td>"I am operating astern propulsion" (倒車)</td>
+</tr>
+<tr>
+<td><strong>5+ 短，急</strong></td>
+<td><strong>Doubt signal</strong> "I doubt your action"</td>
+</tr>
+<tr>
+<td><strong>1 長</strong></td>
+<td>接近彎位 / 阻礙視線 / 駛離碼頭</td>
+</tr>
+</tbody>
+</table>
+<h3 id="overtaking-rule-34c">窄水道 overtaking — Rule 34(c)</h3>
+<table>
+<thead>
+<tr>
+<th>信號</th>
+<th>意義</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2 長 1 短</strong></td>
+<td>我打算從你 <strong>starboard</strong> 追越</td>
+</tr>
+<tr>
+<td><strong>2 長 2 短</strong></td>
+<td>我打算從你 <strong>port</strong> 追越</td>
+</tr>
+<tr>
+<td>1 長 1 短 1 長 1 短</td>
+<td>被追越船同意</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rule-35-2">限制能見度霧號 — Rule 35（每 ≤2 分鐘一次）</h3>
+<table>
+<thead>
+<tr>
+<th>船種</th>
+<th>霧號</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>機動船 underway, <strong>making way</strong></td>
+<td><strong>1 長</strong></td>
+</tr>
+<tr>
+<td>機動船 underway, <strong>stopped 無對水移動</strong></td>
+<td><strong>2 長</strong></td>
+</tr>
+<tr>
+<td><strong>NUC / RAM / 帆船 / 漁船 / 拖船 / CBD</strong></td>
+<td><strong>1 長 2 短</strong></td>
+</tr>
+<tr>
+<td>被拖船</td>
+<td>1 長 3 短</td>
+</tr>
+<tr>
+<td>Pilot vessel</td>
+<td>1 長 2 短 + 4 短</td>
+</tr>
+<tr>
+<td><strong>Anchored ≥100m</strong></td>
+<td>5 秒急 bell + 5 秒 gong 每分鐘</td>
+</tr>
+<tr>
+<td>Anchored &lt;100m</td>
+<td>5 秒急 bell</td>
+</tr>
+<tr>
+<td>Aground</td>
+<td>3 響 bell + 5 秒急 bell + 3 響 bell</td>
+</tr>
+</tbody>
+</table>
+<p><strong>「I am special, give me space」= 1 長 2 短</strong></p>
+<p>Note: <strong>拖船</strong>：停咗都仍係 1 長 2 短（仍 underway）</p>
+<h3 id="_2">香港特有 — 海事處船命令信號</h3>
+<p><strong>1 短 1 長 2 短</strong> = 海事處船命令你<strong>立即停船</strong></p>
+<hr>
+<h2 id="3-vhf-hk-vhf-channels">表 3 — VHF 頻道 (HK VHF Channels)</h2>
+<p>Note: <strong>絕對唔好寫「CH 67 = 全港 incident channel」</strong></p>
+<h3 id="vts-5-sectors">香港 VTS 5 個 sectors</h3>
+<table>
+<thead>
+<tr>
+<th>Channel</th>
+<th>Sector</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CH 02</strong></td>
+<td>Harbour East</td>
+</tr>
+<tr>
+<td><strong>CH 12</strong></td>
+<td>Eastern Approaches</td>
+</tr>
+<tr>
+<td><strong>CH 14</strong></td>
+<td>Harbour</td>
+</tr>
+<tr>
+<td><strong>CH 63</strong></td>
+<td>Lantau South</td>
+</tr>
+<tr>
+<td><strong>CH 67</strong></td>
+<td>Western Approaches</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_3">國際 + 廣播</h3>
+<table>
+<thead>
+<tr>
+<th>Channel</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CH 16</strong></td>
+<td>國際遇險、安全、呼叫頻道</td>
+</tr>
+<tr>
+<td>CH 20</td>
+<td>海事處 safety broadcasts (廣播)</td>
+</tr>
+<tr>
+<td>CH 74</td>
+<td>Kwai Chung Control Station (KCCS) — <strong>唔係 sector</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cascade">緊急 cascade</h3>
+<pre><code>立即生命危險 → MAYDAY (CH 16) → MRCC 2233 7999
+緊急但非生命  → PAN-PAN (CH 16)
+航行警告 / 一般 → VTC 2233 7801 / 7808
+違規舉報 → Harbour Patrol Section (手機)
+</code></pre>
+<h3 id="mayday">MAYDAY 格式</h3>
+<pre><code>MAYDAY MAYDAY MAYDAY
+This is [vessel name] x3
+MAYDAY [vessel name]
+Position: [lat/long OR bearing/distance from landmark]
+Nature of distress: [fire/sinking/MOB/grounding...]
+Persons on board: [N]
+Assistance required: [...]
+OVER
+</code></pre>
+<hr>
+<h2 id="4-speed-limits">表 4 — 香港速度限制 (Speed Limits)</h2>
+<table>
+<thead>
+<tr>
+<th>區域</th>
+<th>限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zone A（一般 typhoon shelter 入口附近）</td>
+<td><strong>5 knots</strong></td>
+</tr>
+<tr>
+<td>Zone B</td>
+<td>10 knots</td>
+</tr>
+<tr>
+<td>Zone C</td>
+<td>15 knots</td>
+</tr>
+<tr>
+<td><strong>Typhoon shelter 入口或內</strong>（共 14 個）</td>
+<td><strong>5 knots</strong></td>
+</tr>
+<tr>
+<td><strong>K3 Hebe Haven / 白沙灣</strong></td>
+<td><strong>5 knots 全年</strong></td>
+</tr>
+<tr>
+<td>Fairway 內</td>
+<td>10–15 knots（視標示）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>16 條 Principal Fairways + 2 條 TSS（Tathong + East Lamma）</strong> post MDN 75/2023</p>
+<p>Note: 舊資料寫 10 fairways = 過時</p>
+<h3 id="tss-colregs-rule-10">TSS 規則 (COLREGS Rule 10)</h3>
+<ul>
+<li>順 traffic lane 行</li>
+<li>過 TSS 必須以接近 90° 角</li>
+<li>唔可入 separation zone（除非緊急 / 漁船捕魚）</li>
+</ul>
+<hr>
+<h2 id="5-hkiaaa">表 5 — HKIAAA 機場進口航道區</h2>
+<table>
+<thead>
+<tr>
+<th>Areas</th>
+<th>規則</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>No. 1, 2, 3, 4</strong></td>
+<td><strong>絕對禁區</strong>（除非處長批准）</td>
+</tr>
+<tr>
+<td>No. 5, 6</td>
+<td>船高限制 ≤ <strong>15 m</strong></td>
+</tr>
+<tr>
+<td>No. 7, 8</td>
+<td>船高限制 ≤ <strong>30 m</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>法源：</strong> Cap. 313A 第 23(6A) 條 + 第五附表第 5–12 段
+<strong>罰則：</strong> 第 3 級罰款（HK$10,000）+ 6 個月監禁</p>
+<p><strong>記憶法：「1234 唔入、56 矮入、78 高啲都入」</strong></p>
+<p>Note: <strong>Area 3 + 7 已於 2022-05-31 依 MDN 105/2022 修訂邊界</strong>（13 個新邊界 light buoys，配合機場三跑道）</p>
+<h3 id="_4">區域大致位置</h3>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>沙螺灣 Sha Lo Wan（機場西南）</td>
+</tr>
+<tr>
+<td>2</td>
+<td>東涌北 Tung Chung north</td>
+</tr>
+<tr>
+<td>3</td>
+<td>機場主西側大型多邊形</td>
+</tr>
+<tr>
+<td>4</td>
+<td>深水角 Sham Shui Kok（機場北矩形）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="vtc-mrcc">香港主要 VTC / MRCC 電話</h3>
+<table>
+<thead>
+<tr>
+<th>機構</th>
+<th>電話</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VTC</strong></td>
+<td>2233 7801（主）/ 2233 7802 / 2233 7808</td>
+</tr>
+<tr>
+<td><strong>MRCC</strong></td>
+<td>2233 7999</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="6-md-md-forms">表 6 — MD 表格 (MD Forms) + 報考流程</h2>
+<h3 id="_5">報考流程</h3>
+<pre><code>1. PEAK 報名 (HK$580 × 2 = HK$1,160) — effective 2026-04-01
+2. 同日考 Part A + Part B（45 分鐘 × 2，60% pass = 24/40 each）
+3. 雙過 → MD687 + MD818
+4. 提交 MD682 + 證書費 HK$220 → 拎牌
+</code></pre>
+<p>Note: <strong>費用兩階段</strong>：HK$785（2025-12-13 至 2026-03-31）→ HK$580（2026-04-01 起）。考前親身 check PEAK 主頁。</p>
+<h3 id="md">MD 表格</h3>
+<table>
+<thead>
+<tr>
+<th>Form</th>
+<th>用途</th>
+<th>簽署</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MD687</strong></td>
+<td>Eyesight Test Certificate (驗眼)</td>
+<td>註冊驗光師</td>
+</tr>
+<tr>
+<td><strong>MD818</strong></td>
+<td>Medical Fitness Certificate (體檢) — <strong>2025-06-30 起所有人都要</strong></td>
+<td>註冊醫生</td>
+</tr>
+<tr>
+<td><strong>MD682</strong></td>
+<td>PVOC Certificate Application</td>
+<td>申請人 + 證件</td>
+</tr>
+</tbody>
+</table>
+<h3 id="md687">MD687 視力標準</h3>
+<p>Note: <strong>唔好簡化做 6/12</strong></p>
+<table>
+<thead>
+<tr>
+<th>視力</th>
+<th>標準</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Distant</td>
+<td>強眼 6/9 + 弱眼 6/12</td>
+</tr>
+<tr>
+<td>Near</td>
+<td>M0.63 / n5 @ 40 cm</td>
+</tr>
+<tr>
+<td>Intermediate</td>
+<td>M1.25 / n10 @ 80 cm</td>
+</tr>
+<tr>
+<td>Colour vision</td>
+<td>Ishihara 標準（24 / 38 plates）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_6">費用總計</h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>金額</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PEAK Part A</td>
+<td>HK$580</td>
+</tr>
+<tr>
+<td>PEAK Part B</td>
+<td>HK$580</td>
+</tr>
+<tr>
+<td>證書費 (MD682)</td>
+<td>HK$220</td>
+</tr>
+<tr>
+<td><strong>總計</strong></td>
+<td><strong>HK$1,380</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="7-part-b-fault-quick-reference">表 7 — Part B 故障速查 (Fault Quick Reference)</h2>
+<h3 id="_7">症狀 → 可能原因</h3>
+<table>
+<thead>
+<tr>
+<th>症狀</th>
+<th>可能原因</th>
+<th>處理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>啟動唔到（柴油）</td>
+<td>Battery 弱 / fuel air lock / air filter 塞</td>
+<td>Check battery、bleed fuel、清濾網</td>
+</tr>
+<tr>
+<td>啟動唔到（汽油）</td>
+<td>Battery / 化油器 / 火花塞</td>
+<td>Check spark plug</td>
+</tr>
+<tr>
+<td><strong>油壓警報響</strong></td>
+<td>油位低 / 漏油 / pump 損</td>
+<td><strong>首要：減速</strong>（非停機）</td>
+</tr>
+<tr>
+<td><strong>油壓持續低</strong></td>
+<td><strong>錶壞 + pump 嚴重磨損</strong></td>
+<td>檢錶、換 pump</td>
+</tr>
+<tr>
+<td>水溫高</td>
+<td>Strainer 塞 / pump impeller 損 / thermostat 卡</td>
+<td>清 strainer</td>
+</tr>
+<tr>
+<td>水溫正常但 strainer 塞</td>
+<td><strong>錶壞 + 負荷低</strong></td>
+<td>Check 錶</td>
+</tr>
+<tr>
+<td><strong>黑煙</strong></td>
+<td>燃料過多 / 空氣不足</td>
+<td>Check air filter, turbo</td>
+</tr>
+<tr>
+<td><strong>白煙</strong></td>
+<td>水入 cylinder</td>
+<td>Check head gasket</td>
+</tr>
+<tr>
+<td><strong>藍煙</strong></td>
+<td>燒潤滑油</td>
+<td>Check piston ring</td>
+</tr>
+<tr>
+<td><strong>失壓縮</strong></td>
+<td><strong>Exhaust valve 卡開</strong> / 閥間隙太細</td>
+<td>Service valve</td>
+</tr>
+<tr>
+<td><strong>氣缸最易磨耗</strong></td>
+<td><strong>過冷</strong> (cold corrosion)</td>
+<td>維持工作溫度</td>
+</tr>
+<tr>
+<td>加速無力（船外汽油機）</td>
+<td><strong>化油器 jet 塞</strong></td>
+<td>清 jet</td>
+</tr>
+<tr>
+<td>噴油器漏</td>
+<td>馬力下降 + 黑煙 + 振動 + 多耗油</td>
+<td>換噴油器</td>
+</tr>
+<tr>
+<td>過量潤滑（柴油）</td>
+<td>結碳 + piston ring 卡</td>
+<td>減潤滑量</td>
+</tr>
+<tr>
+<td>液壓舵 air lock</td>
+<td>接頭漏 / 油量不足</td>
+<td>補油 + bleed</td>
+</tr>
+<tr>
+<td>液壓絞車油位低</td>
+<td>漏油</td>
+<td><strong>首要：隔離 + 檢漏</strong>（非加油）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_8">火災滅火劑速查</h3>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>燃料</th>
+<th>✓ 用</th>
+<th>× 唔用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>木紙布</td>
+<td>水、泡沫、乾粉</td>
+<td>CO₂</td>
+</tr>
+<tr>
+<td>B</td>
+<td>油類</td>
+<td><strong>泡沫</strong>、乾粉、CO₂</td>
+<td><strong>水</strong></td>
+</tr>
+<tr>
+<td>C</td>
+<td>氣體</td>
+<td>乾粉、cut supply</td>
+<td>水</td>
+</tr>
+<tr>
+<td><strong>E (電氣)</strong></td>
+<td>帶電</td>
+<td><strong>CO₂</strong>、乾粉</td>
+<td><strong>水、泡沫</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_9">各種「首要動作」總表</h3>
+<table>
+<thead>
+<tr>
+<th>情況</th>
+<th>首要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>油壓警報</td>
+<td><strong>減速</strong></td>
+</tr>
+<tr>
+<td>觸電</td>
+<td><strong>切電源</strong></td>
+</tr>
+<tr>
+<td>接駁岸電</td>
+<td><strong>關 breaker（碼頭 + 船）</strong></td>
+</tr>
+<tr>
+<td>失舵淺水</td>
+<td><strong>下錨</strong></td>
+</tr>
+<tr>
+<td>擱淺</td>
+<td><strong>停主機 + 檢損 + 抽水</strong>（唔加油門）</td>
+</tr>
+<tr>
+<td>MOB</td>
+<td><strong>拋救生圈 + 喊 + 指</strong></td>
+</tr>
+<tr>
+<td>火警電氣</td>
+<td><strong>CO₂</strong></td>
+</tr>
+<tr>
+<td>LPG 漏</td>
+<td><strong>關主閥 + 通風 + 唔開電</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_10">啟動順序速查</h3>
+<p><strong>柴油正常停車：</strong> 切<strong>燃油</strong>（唔係空氣，唔係電源）</p>
+<p><strong>啟動小船外汽油機首兩步：</strong>
+1. <strong>Lower gearbox 入水</strong>
+2. <strong>波檔 neutral</strong></p>
+<p><strong>啟動後即時錶顯示：</strong>
+- 油壓 = <strong>設計壓力</strong>
+- 水溫 = 仍冷
+- 轉速 = idle</p>
+<hr>
+<h2 id="_11">考試現場貼士</h2>
+<h3 id="_12">時間管理</h3>
+<ul>
+<li>45 分鐘 / 40 題 = <strong>每題 67 秒</strong></li>
+<li>第一遍：有信心嘅即答；唔肯定嘅 mark 後做；圖示題唔識估</li>
+<li>第二遍：返去 mark 嘅，靜心思考</li>
+<li>留 5 分鐘：double check 答案紙無漏</li>
+</ul>
+<h3 id="_13">心理準備</h3>
+<ul>
+<li>60% pass = <strong>24/40</strong>，即可錯 16 題</li>
+<li><strong>冇人 100 分</strong>——錯幾題正常</li>
+<li>圖示題（A.19/20/22/27/B.1/B.22）唔肯定就估，唔好過分糾結</li>
+</ul>
+<h3 id="_14">答題心法</h3>
+<ul>
+<li>模擬題 80 條 = 真考試嘅 closest reference，<strong>全部熟讀</strong></li>
+<li>雙語版本如有差異（例 A.28），以官方答案為準</li>
+<li>「邊個唔係」嘅題目特別留意 — 容易答反</li>
+</ul>
+<h3 id="_15">考完即時</h3>
+<ul>
+<li>雙過 → 即去做 MD687 / MD818</li>
+<li>一過一不過 → 重考唔過嗰部（PEAK 重考折扣可能適用，視當期政策）</li>
+<li>兩個都唔過 → 全部重考</li>
+</ul>
+<hr>
+<p><strong>祝你一 take pass！</strong> </p>
+<p>最後核實日期：2026-05-10。所有 facts trace 返 mardep.gov.hk 同 peak.edu.hk 公開資料 + ChatGPT 5 輪審核。本網站非官方，報考前請以海事處 / PEAK 最新公告為準。</p></article>
+
+  </main>
+  <footer class="site-footer">
+    <p>Staging — non-official. Verify on <a href="https://www.mardep.gov.hk/" rel="noreferrer">mardep.gov.hk</a> before booking exam. <a href="about.html">Known limitations</a></p>
+  </footer>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
